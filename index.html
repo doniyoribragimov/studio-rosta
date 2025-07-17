@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Верстка сайта</title>
 </head>
@@ -14,14 +16,156 @@
         <!-- === HEADER === -->
         <header class="header">
             <div class="container">
-                <div class="header__inner">
-                    
-                    <div class="header__end">
-                        <a class="header__btn getModal desktop-hidden" href="#mobileMenu">
-                            <img src="images/header-btn.svg" alt="header btn">
+                <div class="header__top">
+                    <a class="logo" href="/">
+                        Студия <span>Роста</span>
+                    </a>
+
+                    <div class="header__center">
+                        <a class="header__flag" href="#">
+                            <img src="images/2gis.webp" alt="header icon">
+                            <strong>5,0</strong>
+                        </a>
+
+
+                        <a class="header__rating" href="#">
+                            <div class="header__stars">
+                                <img src="images/star.webp" alt="star icon">
+                                <img src="images/star.webp" alt="star icon">
+                                <img src="images/star.webp" alt="star icon">
+                                <img src="images/star.webp" alt="star icon">
+                                <img src="images/star.webp" alt="star icon">
+                            </div>
+                            <span>Оценка <br> клиентов</span>
                         </a>
                     </div>
+                    <div class="header__end">
+                        <div class="header__right">
+                            <a class="header__phone" href="tel:+79241002230">+7 (924)-100-22-30</a>
+                            <span>Работаем с 9:00 до 18:00</span>
+                        </div>
+
+                        <button class="header__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
+                <div class="header__inner">
+                    <ul class="header__list">
+                        <li><a href="#">Главная</a></li>
+                        <li>
+                            <div class="header__service">Услуги</div>
+                            <div class="header__menu">
+                                <div class="header__main">
+                                    <div class="header__boxes">
+                                        <div class="header__box">
+                                            <h3>SEO продвижение</h3>
+                                            <ul>
+                                                <li><a href="#">Продвижение по трафику</a></li>
+                                                <li><a href="#">Продвижение
+                                                        по позициям</a></li>
+                                                <li><a href="#">Продвижение на Tilda</a></li>
+                                                <li><a href="#">Комплексное продвижение сайтов</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="header__box">
+                                            <h3>Создание и дизайн</h3>
+                                            <ul>
+                                                <li><a href="#">Разработка лендинга</a></li>
+                                                <li><a href="#">Разработка интернет-магазина</a></li>
+                                                <li><a href="#">Разработка коропоративного сайта</a></li>
+                                                <li><a href="#">Разработка многостраничного сайта</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="header__box">
+                                            <ul>
+                                                <li><a href="#"><strong>Контекстная реклама</strong></a></li>
+                                                <li><a href="#"><strong>SMM</strong></a></li>
+                                                <li><a href="#"><strong>Управление репутацией</strong></a></li>
+                                                <li><a href="#"><strong>Отраслевые решения</strong></a></li>
+                                                <li><a href="#"><strong>Регистрация товарного знака </strong></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn--main" href="#">Смотреть все услуги</a>
+                                </div>
+                                <div class="header__blue">
+                                    <h3>Актуальные предложения месяца</h3>
+                                    <a class="btn btn--white" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <a class="btn btn--main" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <ul class="header-mobile__list">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li>
+                        <div class="header-mobile__show">
+                            <span>Услуги</span>
+                            <img src="images/arrow-down.svg" alt="arrow icon">
+                        </div>
+                        <div class="header-mobile__submenu">
+                            <div class="header-mobile__item">
+                                <div class="header-mobile__trigger">
+                                    <span>SEO продвижение</span>
+                                    <img src="images/arrow-down.svg" alt="header icon">
+                                </div>
+
+                                <ul class="header-mobile__hidden">
+                                    <li><a href="#">Продвижение по трафику</a></li>
+                                    <li><a href="#">Продвижение
+                                            по позициям</a></li>
+                                    <li><a href="#">Продвижение на Tilda</a></li>
+                                    <li><a href="#">Комплексное продвижение сайтов</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-mobile__item">
+                                <div class="header-mobile__trigger">
+                                    <span>Создание и дизайн</span>
+                                    <img src="images/arrow-down.svg" alt="header icon">
+                                </div>
+
+                                <ul class="header-mobile__hidden">
+                                    <li><a href="#">Разработка лендинга</a></li>
+                                    <li><a href="#">Разработка интернет-магазина</a></li>
+                                    <li><a href="#">Разработка коропоративного сайта</a></li>
+                                    <li><a href="#">Разработка многостраничного сайта</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="header-mobile__item">
+                                <a href="#">Контекстная реклама</a>
+                            </div>
+                            <div class="header-mobile__item">
+                                <a href="#">SMM</a>
+                            </div>
+                            <div class="header-mobile__item">
+                                <a href="#">Управление репутацией</a>
+                            </div>
+                            <div class="header-mobile__item">
+                                <a href="#">Все услуги</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Обучение</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a class="btn btn--main" href="#">Рассчитать стоимость</a>
             </div>
         </header>
 
@@ -31,63 +175,681 @@
             <!-- === WELCOME === -->
             <section class="welcome">
                 <div class="container">
-                    <h1 class="welcome__title"></h1>
+                    <div class="welcome__inner">
+                        <div class="welcome__info">
+                            <h1 class="welcome__title">Маркетинговое агентство полного цикла <br>
+                                “Студия <span>Роста”</span>
+                            </h1>
+                            <img class="welcome__image" src="images/circle.webp" alt="circle img">
+                            <p>Внедряем рабочие инструменты для привлечения клиентов в ваш бизнес.</p>
+                            <div class="welcome__bottom">
+                                <input class="phone-mask" type="tel" placeholder="(999) 999-99-99">
+                                <a class="btn btn--main getModal" href="#modal">
+                                    Оставить заявку
+                                </a>
+                            </div>
+                        </div>
+                        <img class="welcome__img" src="images/circle.webp" alt="circle img">
+                    </div>
+                    <div class="welcome__boxes">
+                        <div class="welcome__box">
+                            <img src="images/welcome-1.webp" alt="welcome icon">
+                            <span>Используем 50+ инструментов для привлечения клиентов</span>
+                        </div>
+
+                        <div class="welcome__box">
+                            <img src="images/welcome-2.webp" alt="welcome icon">
+                            <span>Специалисты уровня senior</span>
+                        </div>
+
+                        <div class="welcome__box">
+                            <img src="images/welcome-3.webp" alt="welcome icon">
+                            <span>Клиенты из: России, Китая, Тайланда, Японии...</span>
+                        </div>
+
+                        <div class="welcome__box">
+                            <img src="images/welcome-4.webp" alt="welcome icon">
+                            <span>Обучаем онлайн профессиям</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === SERVICES === -->
+            <section class="services spacing">
+                <div class="container">
+                    <h2 class="title mb">Наши <span>услуги</span></h2>
+                    <div class="services__inner">
+                        <div class="services__item green">
+                            <div class="services__wrap">
+                                <h3>SEO-продвижение сайтов</h3>
+                                <p>Поднимаем сайты наших клиентов в результатах поисковой выдачи.</p>
+                            </div>
+                            <strong>от 35 000 ₽</strong>
+                            <img src="images/services-1.webp" alt="services img">
+                        </div>
+
+                        <div class="services__item purple">
+                            <div class="services__wrap">
+                                <h3>Контекстная реклама</h3>
+                                <p>Реклама, которая появляется в нужное время для заинтересованных пользователей.</p>
+                            </div>
+                            <strong>от 15 000 ₽</strong>
+                        </div>
+
+                        <div class="services__item yellow">
+                            <div class="services__wrap">
+                                <h3>SMM</h3>
+                                <p>Общаемся с широкой аудиторией потенциальных клиентов через социальные сети</p>
+                            </div>
+                            <strong>от 35 000 ₽</strong>
+                            <img src="images/services-3.webp" alt="services img">
+                        </div>
+
+                        <div class="services__item pink">
+                            <div class="services__wrap">
+                                <h3>Создание сайтов</h3>
+                                <p>Разрабатываем индивидуальный, технически грамотный веб-сайт для всех видов рекламы
+                                </p>
+                            </div>
+                            <strong>от 50 000 ₽ </strong>
+                        </div>
+
+                        <div class="services__item cyan">
+                            <div class="services__wrap">
+                                <h3>SERM – управление репутацией в сети Интернет</h3>
+                                <p>Создаем и улучшаем деловую репутацию предпринимателей</p>
+                            </div>
+                            <strong>от 350 ₽</strong>
+                            <img src="images/services-2.webp" alt="services img">
+                        </div>
+
+                        <a class="services__link" href="#">Все услуги</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === FOUNDER === -->
+            <section id="about" class="founder minispace">
+                <div class="container">
+                    <div class="founder__inner">
+                        <div class="founder__content">
+                            <h2 class="title">Основатель маркетингового агентства полного цикла "Студия Роста"</h2>
+                            <p>Приветствую вас на сайте маркетингового агентства "Студия Роста". На сайте представлены
+                                рабочие инструменты нашей компании, которые помогают клиентам выйти на новый уровень в
+                                интернете. Результаты наших клиентов подтверждают нашу экпертность.
+                                <br>
+                                Развивайте свой бизнес со "Студией Роста".
+                            </p>
+                            <div class="founder__bottom">
+                                <strong>Станислав Завьялов Д.</strong>
+                                <img src="images/sign.png" alt="sign">
+                            </div>
+                        </div>
+                        <img class="founder__img" src="images/founder.webp" alt="founder img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- === TEAM === -->
+            <section class="team minispace">
+                <div class="container">
+                    <h2 class="title mb">Кто работает над проектами наших клиентов</h2>
+                    <div class="holder">
+                        <div class="team__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="team__item">
+                                        <img src="images/team-1.webp" alt="team img">
+                                        <div class="team__content">
+                                            <h3>Главный дизайнер
+                                            </h3>
+                                            <p>Любовь Кузнецова
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="team__item">
+                                        <img src="images/team-2.webp" alt="team img">
+                                        <div class="team__content">
+                                            <h3>SEO-специалист
+                                            </h3>
+                                            <p>Станислав Завьялов
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="team__item">
+                                        <img src="images/team-3.webp" alt="team img">
+                                        <div class="team__content">
+                                            <h3>Дизайнер
+                                            </h3>
+                                            <p>Алёна Ермакова
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="team__item">
+                                        <img src="images/team-4.webp" alt="team img">
+                                        <div class="team__content">
+                                            <h3>Специалист по рекламе
+                                            </h3>
+                                            <p>Анастасия Косенко
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="team__item">
+                                        <img src="images/team-5.webp" alt="team img">
+                                        <div class="team__content">
+                                            <h3>Фотограф</h3>
+                                            <p>Евгений Пьянков
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow arrow--left">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="arrow arrow--right">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L1 1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === STATS === -->
+            <section class="stats minispace">
+                <div class="container">
+                    <div class="stats__inner">
+                        <div class="stats__mobile">
+                            <div class="stats__top">
+                                Цифры
+                                <a class="logo" href="/">
+                                    Студия <span>Роста</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__blue">
+                            <p>Беспрерывно работаем с предпринимателями с</p>
+                            <div class="stats__bottom">
+                                <h2>2014</h2>
+                                <span>года</span>
+                            </div>
+                        </div>
+                        <div class="stats__grey">
+                            <div class="stats__top">
+                                Цифры
+                                <a class="logo" href="/">
+                                    Студия <span>Роста</span>
+                                </a>
+                            </div>
+
+                            <div class="stats__boxes">
+                                <div class="stats__box">
+                                    <h3><span data-counter-start="0" data-counter-end="116">0</span></h3>
+                                    <p>Создано сайтов за год</p>
+                                </div>
+
+                                <div class="stats__box">
+                                    <h3><span data-counter-start="0" data-counter-end="357">0</span></h3>
+                                    <p>Довольных клиентов</p>
+                                </div>
+
+                                <div class="stats__box">
+                                    <h3><span data-counter-start="0" data-counter-end="35">0</span></h3>
+                                    <p>Сайтов клиентов в топе Яндекса и Гугла
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === FEATURES === -->
+            <section class="features spacing">
+                <div class="container">
+                    <h2 class="title mb"><span>Преимущества</span> работы с нами</h2>
+                    <div class="features__inner">
+                        <div class="features__item">
+                            <h3>Обеспечиваем <br> продвижение под ключ</h3>
+                            <p>«Студия Роста» – это маркетинговое агентство полного цикла, в штате есть специалисты
+                                разных профилей. Поэтому у нас можно заказать веб-разработку, диджитал рекламу,
+                                улучшение репутации бизнеса и другие работы, связанные с цифровым маркетингом.</p>
+                        </div>
+                        <div class="features__item">
+                            <h3>Используем современные маркетинговые методики и технологии разработки</h3>
+                            <p>Поэтому наши проекты хорошо продвигаются и рекламные кампании показывают высокую
+                                эффективность.</p>
+                        </div>
+                        <div class="features__item percent">
+                            <h3>Выгодная стоимость услуг</h3>
+                            <p>Предлагаем доступные цены, в том числе для микро- и малого бизнеса</p>
+                            <img src="images/features-1.webp" alt="features img">
+                        </div>
+                        <div class="features__item globe">
+                            <img src="images/features-2.webp" alt="features img">
+                        </div>
+                        <div class="features__item">
+                            <h3>Ответственно подходим к оказанию услуг</h3>
+                            <p>Уважаем конфиденциальность предоставленной клиентом информации о компании, соблюдаем
+                                договоренности и взятые обязательства.</p>
+                        </div>
+                        <a class="features__link" href="#">Связаться с нами</a>
+                    </div>
+                    <div class="features__ask">
+                        <div class="features__content">
+                            <h3>Остались вопросы?
+                            </h3>
+                            <p>Мы с радостью ответим на любые ваши вопросы или поможем выбрать конкретную услугу. Просто
+                                оставьте свое имя и контактные данные, и наш менеджер свяжется с вами!</p>
+                        </div>
+
+                        <form class="form">
+                            <input type="text" name="fullname" placeholder="Ваше имя">
+                            <input class="phone-mask" type="tel" placeholder="(999) 999-99-99">
+                            <label class="form__confirm">
+                                <input type="checkbox" checked>
+                                <span class="form__policy">
+                                    Соглашаюсь на обработку моих персональных данных в соответствии с <a
+                                        href="#">Условиями</a>
+                                </span>
+                            </label>
+                            <button class="btn btn--black" type="submit">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === TRUST === -->
+            <section class="trust spacing">
+                <div class="container">
+                    <h2 class="title mb">Нам доверяют</h2>
+                    <div class="trust__inner">
+                        <div class="trust__item">
+                            <img src="images/trust-1.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-2.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-3.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-4.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-5.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-6.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-7.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-8.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-9.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-10.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-11.webp" alt="trust img">
+                        </div>
+                        <div class="trust__item">
+                            <img src="images/trust-12.webp" alt="trust img">
+                        </div>
+                        </di v>
                     </div>
             </section>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
+            <!-- === HELP === -->
+            <section class="help spacing">
                 <div class="container">
-                    <h2 class="title mb"></h2>
+                    <h2 class="title mb">Как мы помогли нашим клиентом выйти в <strong>ТОП-10</strong></h2>
+                    <div class="help__inner">
+                        <div class="help__item white">
+                            <h3>Увеличение узнаваемости и заявок с сайта в 2 раза</h3>
+                            <p>Мебельная мастерская am27.ru</p>
+                            <img src="images/help-1.webp" alt="help img">
+                        </div>
+                        <div class="help__item orange">
+                            <h3>Рост посещаемости на 10 000 человек ежемесячно</h3>
+                            <p>Авто сервис по кузовному ремонту goodmaster27.ru</p>
+                            <img src="images/help-2.webp" alt="help img">
+                        </div>
+                        <a class="help__item purple" href="images/hslide-1.webp" data-fancybox="help1">
+                            <h3>Создали сайт компании</h3>
+                            <p>Языковая школа lingoacademy.ru</p>
+                            <img src="images/help-3.webp" alt="help img">
+                        </a>
+
+                        <div class="help__item blue">
+                            <h3>Увеличение трафика в 5 раз</h3>
+                            <p>Сайт-каталог спецтехники komamax27.ru</p>
+                        </div>
+                        <a class="help__item dark" href="images/sslider-1.webp" data-fancybox="help2">
+                            <h3>Создали интернет-магазин с более 500 шт товаров</h3>
+                            <p>Интернет-магазин сплит систем atmosline.ru
+                            </p>
+                            <img src="images/help-4.webp" alt="help img">
+                        </a>
+                        <a class="help__link" href="#">Все кейсы</a>
+                    </div>
+                    <div class="help__hidden">
+                        <a href="images/hslide-2.webp" data-fancybox="help1">
+                        </a>
+                        <a href="images/hslide-3.webp" data-fancybox="help1">
+                        </a>
+                        <a href="images/hslide-4.webp" data-fancybox="help1">
+                        </a>
+                    </div>
+                    <div class="help__hidden">
+                        <a href="images/sslider-2.webp" data-fancybox="help2">
+                        </a>
+                        <a href="images/sslider-3.webp" data-fancybox="help2">
+                        </a>
+                        <a href="images/sslider-4.webp" data-fancybox="help2">
+                        </a>
+                        <a href="images/sslider-5.webp" data-fancybox="help2">
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
+            <!-- === STAGES === -->
+            <section class="stages spacing">
                 <div class="container">
-                    <h2 class="title"></h2>
+                    <h2 class="title text-center mb">Этапы взаимодействия с нами</h2>
+                    <div class="tabs">
+                        <a class="tabs__item active" href="#">Этап 1</a>
+                        <a class="tabs__item" href="#">Этап 2</a>
+                        <a class="tabs__item" href="#">Этап 3</a>
+                        <a class="tabs__item" href="#">Этап 4</a>
+                        <a class="tabs__item" href="#">Этап 5</a>
+                    </div>
+
+                    <select class="stages__select">
+                        <option value="stages1">Этап 1</option>
+                        <option value="stages2">Этап 2</option>
+                        <option value="stages2">Этап 3</option>
+                        <option value="stages2">Этап 4</option>
+                        <option value="stages2">Этап 5</option>
+                    </select>
+
+                    <div class="tabs__content active">
+                        <div class="tabs__wrapper">
+                            <div class="stages__inner">
+                                <div class="stages__wrap">
+                                    <img src="images/stage-1.webp" alt="stages img">
+                                </div>
+                                <div class="stages__content">
+                                    <h3>Оставьте заявку на сайте агентства</h3>
+                                    <p>Сразу после обработки сообщения (или в указанное в заявке удобное время)
+                                        перезвоним, чтобы уточнить заказ.</p>
+                                    <a class="btn btn--main getModal" href="#modal">Связаться с нами</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__wrapper">
+                            <div class="stages__inner">
+                                <div class="stages__wrap">
+                                    <img src="images/stage-2.webp" alt="stages img">
+                                </div>
+                                <div class="stages__content">
+                                    <h3>Обсудите задачу со специалистом</h3>
+                                    <p>Расскажите, какие именно задачи, связанные с digital маркетингом, предстоит
+                                        решить. Агентство успешно занимается созданием сайтов, раскруткой существующих
+                                        ресурсов, SERM, настройкой рекламы в социальных сетях, также можно заказать
+                                        комплексное продвижение в интернете.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__wrapper">
+                            <div class="stages__inner">
+                                <div class="stages__wrap">
+                                    <img src="images/stage-3.webp" alt="stages img">
+                                </div>
+                                <div class="stages__content">
+                                    <h3>Получите план действий и расчет стоимости</h3>
+                                    <p>После анализа предоставленной информации предложим перечень конкретных шагов.
+                                        Также посчитаем, сколько стоят услуги – если задач много, составим подробный
+                                        прайс лист.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__wrapper">
+                            <div class="stages__inner">
+                                <div class="stages__wrap">
+                                    <img src="images/stage-4.webp" alt="stages img">
+                                </div>
+                                <div class="stages__content">
+                                    <h3>Следите за процессом</h3>
+                                    <p>На важных этапах рабочего цикла готовим понятные отчеты с промежуточными и
+                                        итоговыми показателями. За основными параметрами работы специалистов можно
+                                        следить онлайн.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__wrapper">
+                            <div class="stages__inner">
+                                <div class="stages__wrap">
+                                    <img src="images/stage-5.webp" alt="stages img">
+                                </div>
+                                <div class="stages__content">
+                                    <h3>Получите готовый результат</h3>
+                                    <p>На заключительном этапе сотрудничества даем полный отчет, предлагаем рекомендации
+                                        по дальнейшему развитию проекта.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
+            <!-- === REVIEWS === -->
+            <section class="reviews spacing">
                 <div class="container">
-                    <h2 class="title"></h2>
+                    <h2 class="title mb">Отзывы довольных клиентов</h2>
+                    <div class="reviews__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item blue">
+                                    <img class="reviews__img" src="images/reviews-1.webp" alt="reviews img">
+                                    <div class="reviews__content">
+                                        <h3>Олег Егоров</h3>
+                                        <span>(руководитель)</span>
+                                        <p>
+                                            Работа выполнена качественно, своевременно и с учетом всех пожеланий!
+                                            Получился современный и функциональный сайт - то что нам и требовалось.
+                                            <br>
+                                            После завершения работы, дизайнер сделала подробную видео инструкцию по
+                                            управлению сайтом и дальше поддерживает и всегда готова объяснить и помочь
+                                            разобраться если возникают вопросы!
+                                            <br>
+                                            Рекомендую 100%
+                                        </p>
+                                        <a href="#">tss27.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__item green">
+                                    <img class="reviews__img" src="images/reviews-2.webp" alt="reviews img">
+                                    <div class="reviews__content">
+                                        <h3>Галина</h3>
+                                        <span>(руководитель)</span>
+                                        <p>
+                                            Спасибо вам большое за всю проделанную работу и за ее результаты.
+                                            <br>
+                                            Сайт очень нравится всем, теплый, уютный, информативный и очень удобный.
+                                            <br>
+                                            Мы надеемся на дальнейшее сотрудничество, будем всем рекомендовать вас❤️
+                                            Успехов вам ! Много творческих проектов!
+                                        </p>
+                                        <a href="#">arbuz27.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__item yellow">
+                                    <img class="reviews__img" src="images/reviews-3.webp" alt="reviews img">
+                                    <div class="reviews__content">
+                                        <h3>Марина Валерьевна</h3>
+                                        <span>(начальник отдела экологического просвещения)</span>
+                                        <p>Благодарим за положительный опыт в создании сайта и качественную работу!
+                                            Эффективная коммуникация и своевременная обратная связь превратили Вашу
+                                            работу в настоящее искусство! Были учтены все пожелания, исправлялось всё
+                                            вовремя и с аргументами почему надо сделать именно так, что убирало лишние
+                                            вопросы и приводило к пониманию наших желаний. В будущем планируем запустить
+                                            ещё проект, обязательно снова обратимся. Успехов команде!</p>
+                                        <a href="#">tko27.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__arrows">
+                        <button class="reviews__arrow reviews__arrow--left">
+                            <img src="images/lefts.svg" alt="arrow icon">
+                        </button>
+
+                        <button class="reviews__arrow reviews__arrow--right">
+                            <img src="images/rights.svg" alt="arrow icon">
+                        </button>
+                    </div>
                 </div>
             </section>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
+            <!-- === ASSIST === -->
+            <section class="assist spacing">
                 <div class="container">
-                    <h2 class="title"></h2>
+                    <h2 class="title mb">Какому бизнесу мы можем помочь</h2>
+                    <p class="assist__text">Умеем работать с компаниями разных типов, из Хабаровска или других регионов.
+                        Обязательно учитываем отраслевую, региональную специфику и предлагаем индивидуальные решения.
+                        Среди наших клиентов:</p>
+                    <!-- === ACCORDION === -->
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <a class="accordion__head" href="#">
+                                <div class="accordion__name">Крупные компании</div>
+                                <div class="accordion__btn">
+                                    <img class="accordion__trigger" src="images/plus.svg" alt="plus">
+                                </div>
+                            </a>
+
+                            <div class="accordion__wrapper">
+                                <div class="accordion__content">Работаем с большими корпоративными порталами, помогаем
+                                    продвигать продукты в сегментах B2B и B2C.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <a class="accordion__head" href="#">
+                                <div class="accordion__name">Средний и малый бизнес</div>
+                                <div class="accordion__btn">
+                                    <img class="accordion__trigger" src="images/plus.svg" alt="plus">
+                                </div>
+                            </a>
+
+                            <div class="accordion__wrapper">
+                                <div class="accordion__content">Продвигаем интернет-магазины, фитнес-центры,
+                                    транспортные и другие предприятия. Независимо от того, в какой сфере работает фирма,
+                                    подберем эффективную маркетинговую стратегию.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <a class="accordion__head" href="#">
+                                <div class="accordion__name">Микробизнес, индивидуальные предприниматели, самозанятые
+                                    фрилансеры</div>
+                                <div class="accordion__btn">
+                                    <img class="accordion__trigger" src="images/plus.svg" alt="plus">
+                                </div>
+                            </a>
+
+                            <div class="accordion__wrapper">
+                                <div class="accordion__content">Помогаем создать сильный личный бренд и успешно
+                                    продвинуть продукт, даже если он узкоспециализированный, а аудитория небольшая.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
+            <!-- === BLOGS === -->
+            <section class="blogs spacing">
                 <div class="container">
-                    <h2 class="title"></h2>
-                </div>
-            </section>
+                    <h2 class="title mb">Полезные статьи</h2>
+                    <div class="blogs__inner">
+                        <a class="blogs__item getModal" href="#news">
+                            <img src="images/blogs-1.webp" alt="blogs img">
+                            <div class="blogs__content">
+                                <h3>SEO-аудит сайта: важный этап оптимизации</h3>
+                            </div>
+                        </a>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
-                <div class="container">
-                    <h2 class="title"></h2>
-                </div>
-            </section>
+                        <a class="blogs__item getModal" href="#news">
+                            <img src="images/blogs-2.webp" alt="blogs img">
+                            <div class="blogs__content">
+                                <h3>Продвижение в Яндексе: эффективные услуги SEO</h3>
+                            </div>
+                        </a>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
-                <div class="container">
-                    <h2 class="title"></h2>
-                </div>
-            </section>
+                        <a class="blogs__item getModal" href="#news">
+                            <img src="images/blogs-3.webp" alt="blogs img">
+                            <div class="blogs__content">
+                                <h3>Продвижение интернет-магазина: эффективные услуги для успешного развития</h3>
+                            </div>
+                        </a>
 
-            <!-- === NAMING === -->
-            <section class="naming spacing">
-                <div class="container">
-                    <h2 class="title"></h2>
+                        <a class="blogs__item getModal" href="#news">
+                            <img src="images/blogs-4.webp" alt="blogs img">
+                            <div class="blogs__content">
+                                <h3>Услуги Веб-аналитики сайта: повышение эффективности бизнеса в онлайн-пространстве
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="btn btn--main btn--center" href="#">Читать все новости </a>
                 </div>
             </section>
         </main>
@@ -95,38 +857,245 @@
         <!-- === FOOTER === -->
         <footer class="footer">
             <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <a class="logo" href="/">
+                            Студия <span>Роста</span>
+                        </a>
+                        <ul class="footer__list">
+                            <li>2015-2024</li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                        <div class="footer__socials">
+                            <a class="footer__social" href="#">
+                                <img src="images/yandex.webp" alt="social icon">
+                            </a>
 
+                            <a class="footer__social" href="#">
+                                <img src="images/goggle.webp" alt="social icon">
+                            </a>
+                        </div>
+
+                        <a class="footer__gis" href="#">
+                            <img src="images/gis.webp" alt="gis icon">
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <h3>Услуги</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Контекстная реклама</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">SMM</a></li>
+                            <li><a href="#">SERM</a></li>
+                            <li><a href="#">Создание сайтов</a></li>
+                            <li><a href="#">Таргетированная реклама</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer__item">
+                        <h3>Компания</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__item">
+                        <h3>Реквизиты</h3>
+                        <ul class="footer__list">
+                            <li>ИП Завьялов С.Д.</li>
+                            <li>ИНН. 272326913070</li>
+                            <li>ОГРН/ОГРНИП 316272400098341</li>
+                            <li>Счёт 40802810570000017690</li>
+                            <li>БИК 040813608</li>
+                            <li>Наименование Банка ДАЛЬНЕВОСТОЧНЫЙ БАНК ПАО СБЕРБАНК</li>
+                            <li>К/С 30101810600000000608</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__boxes">
+                        <div class="footer__box">
+                            <h4>Адрес</h4>
+                            <span>г.Хабаровск ул. Льва Толстого 15</span>
+                        </div>
+
+                        <div class="footer__box">
+                            <h4>Почта</h4>
+                            <a href="mailto:studiorosta.info@yandex.ru">studiorosta.info@yandex.ru</a>
+                        </div>
+
+                        <div class="footer__box">
+                            <h4>Телефон</h4>
+                            <a href="tel:+79241002230">+7-924-100-22-30</a>
+                        </div>
+
+                        <div class="footer__box">
+                            <h4>Мы в социальных сетях:</h4>
+                            <div class="footer__socials">
+                                <a class="footer__social" href="#">
+                                    <img src="images/whatsapp.webp" alt="social icon">
+                                </a>
+
+                                <a class="footer__social" href="#">
+                                    <img src="images/vk.webp" alt="social icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
 
     <!-- === MODAL === -->
     <div id="modal" class="modal">
+        <button class="modal__close">
+            <img src="images/x-white.svg" alt="x icon">
+        </button>
         <div class="modal__inner">
-            <h3 class="modal__title">Оставить заявку</h3>
-            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
-                проведет бесплатную консультацию</p>
-            <button class="modal__close">
-                <img src="images/x-icon.svg" alt="x icon">
-            </button>
+            <h3 class="modal__title">Заказать обратный звонок</h3>
+            <p class="modal__text">Оставьте свои данные и мы свяжемся с вами!</p>
+            
             <form class="form">
-                <div class="form__item">
-                    <img src="images/profile-icon.svg" alt="form icon">
-                    <input type="text" name="fullname" placeholder="Ваше имя">
+                <div class="form__wrap">
+                    <label for="phones">Телефон</label>
+                    <input id="phones" class="phone-mask" type="tel" placeholder="(999) 999-99-99">
                 </div>
-                <div class="form__item">
-                    <img src="images/tel-icon.svg" alt="form icon">
-                    <input type="tel" name="phone" placeholder="Номер телефона">
+                <div class="form__wrap">
+                    <label for="names">Имя</label>
+                    <input id="names" type="text" name="fname">
                 </div>
-                <button class="btn btn--main" type="submit">Оставить заявку</button>
+                <div class="form__wrap">
+                    <label for="city">Ваш город</label>
+                    <input id="city" type="text" name="city">
+                </div>
+                <button class="btn btn--main" type="submit">Отправить</button>
                 <label class="form__confirm">
                     <input type="checkbox" checked>
                     <span class="form__policy">
-                        Нажимая на кнопку оставить, вы соглашаетесь
-                        с <a href="#">политикой конфиденциальности</a> сайта
+                        Я согласен с <a href="#">политикой конфиденциальности</a>
                     </span>
                 </label>
             </form>
+        </div>
+    </div>
+
+    <!-- === NEWS MODAL === -->
+    <div id="news" class="news-modal">
+        <div class="news-modal__top">
+            <div class="container">
+                <div class="news-modal__upper">
+                    <button class="news-modal__close">
+                        <img src="images/arrow-lefts.svg" alt="arrow icon">
+                    </button>
+                    <h3>Новости</h3>
+                    <a class="news-modal__share" href="#">
+                        <img src="images/share.svg" alt="news-modal icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="news-modal__main">
+                <h2>Продвижение в Яндексе: эффективные услуги SEO
+                </h2>
+                <img src="images/news-1.png" alt="news img">
+                <p>
+                    В настоящее время продвижение сайтов в поисковых системах занимает важное место в успешном
+                    интернет-маркетинге. Одной из самых популярных поисковых систем в России является Яндекс.
+                    Поэтому, если вы хотите добиться высокой посещаемости и видимости вашего сайта, то
+                    SEO-продвижение в Яндексе станет незаменимым инструментом.
+                    <br><br>
+                    SEO-продвижение в Яндексе - это комплекс мероприятий, направленных на улучшение позиций сайта в
+                    выдаче поисковой системы. Оно включает в себя оптимизацию сайта, анализ конкурентов, работу с
+                    ссылочной массой и другие методы, способствующие повышению рейтинга сайта в поисковых системах.
+                </p>
+                <img src="images/news02.svg" alt="news img">
+                <h3>Задачи SEO</h3>
+                <p>
+                    Основная задача SEO-продвижения в Яндексе - это достичь топовых позиций в поисковой выдаче.
+                    Сайты, которые находятся в топе, получают наибольшее количество органического трафика, что
+                    является залогом успешного онлайн-бизнеса. Конечно, каждый владелец сайта мечтает о том, чтобы
+                    его ресурс был виден пользователям на первых страницах поисковой выдачи. Именно поэтому услуги
+                    SEO-продвижения в Яндексе являются востребованными.
+                    <br><br>
+                    Одной из ключевых задач SEO-продвижения в Яндексе является оптимизация сайта под требования
+                    поисковой системы. Яндекс учитывает большое количество факторов при ранжировании сайтов, таких
+                    как качество контента, структура сайта, скорость загрузки страниц и другие технические аспекты.
+                    Оптимизация сайта позволяет улучшить эти параметры и повысить его позиции в выдаче Яндекса.
+                    <br><br>
+                    Еще одним важным аспектом SEO-продвижения в Яндексе является работа со ссылочной массой.
+                    Качественные и релевантные ссылки с других сайтов помогают повысить авторитетность вашего сайта
+                    в глазах поисковых систем. Яндекс учитывает количество и качество ссылок при определении
+                    рейтинга сайта. Поэтому, заказывая продвижение сайта в Яндексе, вам будет предложено создание и
+                    размещение ссылок на качественных и авторитетных веб-ресурсах.
+                    <br><br>
+                    Важной составляющей SEO-продвижения в Яндексе является анализ конкурентов. Изучение сайтов
+                    конкурентов позволяет определить их слабые места и использовать их в своих интересах. Также,
+                    анализ конкурентов позволяет определить наиболее эффективные ключевые слова и запросы, которые
+                    уже работают для других сайтов в вашей нише. Используя эти данные, вы сможете улучшить свою
+                    SEO-стратегию и повысить свои позиции в Яндексе.
+                </p>
+                <img src="images/news-3.svg" alt="news img">
+                <h3>А сколько стоит?</h3>
+                <p>
+                    Когда вы решите заказать продвижение сайта в Яндексе, вы должны быть готовы к вложению средств.
+                    Ведь SEO-продвижение - это долгосрочный процесс, требующий времени и ресурсов. Однако,
+                    результаты продвижения в Яндексе оправдывают затраты. Высокая посещаемость и видимость сайта
+                    приводят к увеличению числа клиентов и продаж, что в конечном итоге приводит к росту прибыли
+                    вашего бизнеса.
+                    <br><br>
+                    Если вы хотите продвинуть свой сайт в топ Яндекса, то обратитесь к профессионалам. Компания
+                    "Студия Роста" предлагает качественные услуги SEO-продвижения в Яндексе. Наши специалисты имеют
+                    большой опыт работы и знания в области SEO. Мы поможем вам достичь высоких позиций в яндекс-топе
+                    и увеличить посещаемость вашего сайта.
+                    <br><br>
+                    Заказать продвижение сайта в Яндексе стало проще простого. Просто оставьте заявку на нашем сайте
+                    и наш менеджер свяжется с вами в ближайшее время. Мы разработаем индивидуальную стратегию
+                    продвижения, учитывая особенности вашего сайта и вашу нишу. Результаты нашей работы не заставят
+                    вас долго ждать - ваш сайт станет видимым для пользователей и находится в топе Яндекса.
+                    <br><br>
+                    Не откладывайте продвижение вашего сайта в Яндексе на потом. Обратитесь к профессионалам и
+                    получите максимальный результат от продвижения в Яндексе. Услуги SEO-продвижения в Яндексе от
+                    "Студии Роста" - это надежный путь к успеху вашего онлайн-бизнеса.
+                </p>
+            </div>
+            <div class="news-modal__bottom">
+                <h3>See also</h3>
+                <div class="news-modal__lines">
+                    <a class="news-modal__line" href="#">
+                        <img src="images/mini-1.svg" alt="mini img">
+                        <div class="news-modal__info">
+                            <h4>Готовый многостраничный сайт: стоимость вашего успеха</h4>
+                        </div>
+                    </a>
+
+                    <a class="news-modal__line" href="#">
+                        <img src="images/mini-2.png" alt="mini img">
+                        <div class="news-modal__info">
+                            <h4>Управление репутацией в Интернете</h4>
+                        </div>
+                    </a>
+
+                    <a class="news-modal__line" href="#">
+                        <img src="images/mini-3.png" alt="mini img">
+                        <div class="news-modal__info">
+                            <h4>Самостоятельное продвижение сайта: пошаговая инструкция для начинающих</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maxime harum voluptas itaque accusamus quos.</p>
+                        </div>
+                    </a>
+
+                    <a class="news-modal__line" href="#">
+                        <img src="images/mini-4.png" alt="mini img">
+                        <div class="news-modal__info">
+                            <h4>Услуги Веб-аналитики сайта: повышение эффективности бизнеса в онлайн-пространстве</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -194,6 +1163,7 @@
     <!-- === SCRIPTS === -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
     <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/script.js"></script>
 </body>

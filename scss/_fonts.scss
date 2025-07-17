@@ -1,9 +1,17 @@
 @font-face {
     font-display: swap; 
-    font-family: 'Gilroy';
+    font-family: 'ArialMT';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/gilroy-regular.woff2') format('woff2'), 
-         url('../fonts/gilroy-regular.ttf') format('truetype');
+    src: url('../fonts/ArialMT.woff2') format('woff2'), 
+         url('../fonts/ArialMT.ttf') format('truetype');
 }
 
+@font-face {
+    font-display: swap; 
+    font-family: 'ArialMT';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ArialMT.woff2') format('woff2'), 
+         url('../fonts/ArialMT.ttf') format('truetype');
+}

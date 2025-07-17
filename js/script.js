@@ -1,4 +1,31 @@
 jQuery(document).ready(function ($) {
+    $('.header__btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.header-mobile').toggleClass('active');
+    })
+
+    $('.header-mobile__submenu').hide(); // hide on load
+
+    $('.header-mobile__show').on('click', function () {
+        $(this).toggleClass('active');
+
+        const submenu = $(this).next('.header-mobile__submenu');
+        submenu.slideToggle(200).toggleClass('active');
+    });
+
+    const phoneInputs = document.querySelectorAll(".phone-mask");
+
+    phoneInputs.forEach(input => {
+        window.intlTelInput(input, {
+            initialCountry: "ru",
+            separateDialCode: true,
+            preferredCountries: ["ru", "us", "gb"],
+            separateDialCode: true,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+        });
+    });
+
+
     // СЛАЙДЕР ДЛЯ БЕСКОНЕЧНОГО СКРОЛЛИНГА
     // $('.slider_infinite').slick({
     //     speed: 2000,
@@ -93,6 +120,10 @@ jQuery(document).ready(function ($) {
     // ДЛЯ ЗАКРЫТИЯ МОДАЛКИ
     $('.modal__close').on('click', function () {
         closeModalOrMenu($(this).parents('.modal'));
+    });
+
+    $('.news-modal__close').on('click', function () {
+        closeModalOrMenu($(this).parents('.news-modal'));
     });
 
     // ДЛЯ ЗАКРЫТИЯ МОБИЛЬНОГО МЕНЮ
@@ -196,7 +227,7 @@ jQuery(document).ready(function ($) {
     $('[data-animate]').each(function () {
         var $this = $(this);
         var animationClass = $this.data('animate');
-        
+
         $this.wrap('<div class="anim ' + animationClass + '"></div>');
     });
 
@@ -243,6 +274,74 @@ jQuery(document).ready(function ($) {
 });
 
 // SWIPER слайдеры
+const teamSlider = new Swiper('.team__slider', {
+    loop: true,
+    spaceBetween: 50,
+    slidesPerView: 4,
+    speed: 600,
+    navigation: {
+        prevEl: ".team .arrow--left",
+        nextEl: ".team .arrow--right",
+    },
+    
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+
+        620: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 3,
+        },
+
+        1400: {
+            slidesPerView: 4,
+        },
+
+       
+    }
+});
+
+const reviewsSlider = new Swiper('.reviews__slider', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1.2,
+    speed: 600,
+    navigation: {
+        prevEl: ".reviews__arrow--left",
+        nextEl: ".reviews__arrow--right",
+    },
+ 
+    breakpoints: {
+        0: {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            autoHeight: true,
+        },
+
+        620: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+        },
+
+        1400: {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+        },
+    }
+});
+
 const sectionName_5 = new Swiper('.sectionName__slider', {
     loop: true,
     spaceBetween: 30,
@@ -529,7 +628,7 @@ function animateCounter(selector, duration = 2000) {
         observer.observe(element);
     });
 }
-animateCounter('.nums span', 3000);
+animateCounter('.stats__box span', 3000);
 
 // AOS.init();
 
@@ -606,7 +705,7 @@ function createSelectTab(tabName, contentName, selectName) {
         });
     }
 }
-createSelectTab('.name .tabs__item', '.name .tabs__content', '.name .tabs__select');
+createSelectTab('.stages .tabs__item', '.stages .tabs__content', '.stages__select')
 
 // ФУНКЦИЯ ДЛЯ АККОРДИОНОВ - УНИВЕРСАЛЬНЫЙ
 function createAccordion(target, content, singleOn, startFrom) {
@@ -670,7 +769,7 @@ function createAccordion(target, content, singleOn, startFrom) {
         }
     }
 }
-// createAccordion('.mobile-menu__list img', '.mobile-menu__list ul', false);
+createAccordion('.header-mobile__trigger', '.header-mobile__hidden', false);
 
 class PhoneInputFormatter {
     constructor(input) {
@@ -836,7 +935,7 @@ document.querySelectorAll('.custom-select').forEach((select) => {
 
     const initialItem = Array.from(items).find(item => item.dataset.value === hiddenInput.value);
     if (initialItem) {
-        current.textContent = initialItem.textContent.trim(); 
+        current.textContent = initialItem.textContent.trim();
     }
 
     current.addEventListener('click', () => {

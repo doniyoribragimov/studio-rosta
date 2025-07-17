@@ -243,16 +243,18 @@ td {
 }
 
 body{
-  font-family: Tahoma, sans-serif, sans-serif;
+  font-family: 'Arial', Arial, sans-serif;
   color: $text;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f9ff;
+  color: #414156;
 }
 
 .container{
   margin: auto;
-  max-width: 1200px;
+  max-width: 1160px;
 }
 
 input[type="text"],
@@ -266,13 +268,12 @@ input[type="url"],
 textarea {
   padding: 0 24px;
   width: 100%;
-  border: 1px solid transparent;
   transition: all 0.2s;
+  border: 1px solid #353340;
   &:hover,
   &:focus {
     border-color: $main;
     background-color: #fff;
-    box-shadow: 0 0 0 1px $main;
   }
   &::placeholder {
     color: #B3B9BE;
@@ -280,6 +281,6 @@ textarea {
 }
 
 
-@include border(10px);
-@include height(60px);
+@include border(30px);
+@include height(55px);
 
