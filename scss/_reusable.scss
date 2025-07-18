@@ -78,22 +78,13 @@
 
 
     &__content {
-        display: grid;
-        grid-template-rows: 0fr;
-        overflow: hidden;
-
-        &:has(.swiper) {
-            min-width: 0;
-        }
-
+        display: none;
         &.active {
-            grid-template-rows: 1fr;
+            display: block;
         }
     }
 
-    &__wrapper {
-        min-height: 0;
-    }
+  
 
 }
 
@@ -112,6 +103,10 @@
 
     span {
         color: rgb(28, 118, 191);
+    }
+
+    &.upper{
+        text-transform: uppercase;
     }
 }
 
@@ -958,12 +953,3 @@
 //     }
 // }
 
-// .swiper-wrapper {
-//     -webkit-transition-timing-function: linear !important;
-//     transition-timing-function: linear !important;
-//     position: relative;
-// }
-
-// .swiper-slide {
-//     width: auto;
-// }

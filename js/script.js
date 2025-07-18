@@ -117,6 +117,8 @@ jQuery(document).ready(function ($) {
         openModalOrMenu(triggerHref, triggerHref);
     });
 
+
+
     // ДЛЯ ЗАКРЫТИЯ МОДАЛКИ
     $('.modal__close').on('click', function () {
         closeModalOrMenu($(this).parents('.modal'));
@@ -283,7 +285,7 @@ const teamSlider = new Swiper('.team__slider', {
         prevEl: ".team .arrow--left",
         nextEl: ".team .arrow--right",
     },
-    
+
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -304,7 +306,7 @@ const teamSlider = new Swiper('.team__slider', {
             slidesPerView: 4,
         },
 
-       
+
     }
 });
 
@@ -317,7 +319,7 @@ const reviewsSlider = new Swiper('.reviews__slider', {
         prevEl: ".reviews__arrow--left",
         nextEl: ".reviews__arrow--right",
     },
- 
+
     breakpoints: {
         0: {
             spaceBetween: 10,
@@ -338,6 +340,67 @@ const reviewsSlider = new Swiper('.reviews__slider', {
         1400: {
             slidesPerView: 1.2,
             spaceBetween: 30,
+        },
+    }
+});
+
+const openupLeft = new Swiper('#openupLeft', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    allowTouchMove: false,
+    speed: 4000, 
+    autoplay: {
+      delay: 0, 
+      disableOnInteraction: false,
+    },
+  });
+
+  const openupRight = new Swiper('#openupRight', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    allowTouchMove: false,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true, 
+    },
+  });
+
+const studentSlider = new Swiper('.student__slider', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 4,
+    speed: 600,
+    navigation: {
+        prevEl: ".student .arrow--left",
+        nextEl: ".student .arrow--right",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+        },
+
+        620: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 3,
+        },
+
+        1024: {
+            spaceBetween: 20,
+            slidesPerView: 4,
+        },
+
+        1600: {
+            slidesPerView: 4,
         },
     }
 });
@@ -706,6 +769,7 @@ function createSelectTab(tabName, contentName, selectName) {
     }
 }
 createSelectTab('.stages .tabs__item', '.stages .tabs__content', '.stages__select')
+createSelectTab('.ideal .tabs__item', '.ideal .tabs__content', '.ideal .stages__select')
 
 // ФУНКЦИЯ ДЛЯ АККОРДИОНОВ - УНИВЕРСАЛЬНЫЙ
 function createAccordion(target, content, singleOn, startFrom) {
@@ -962,110 +1026,29 @@ document.querySelectorAll('.custom-select').forEach((select) => {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const popovers = document.querySelectorAll('.ideal__popover');
 
+    if (!popovers.length) return;
 
+    popovers.forEach(popover => {
+        const icon = popover.querySelector('.ideal__icon');
 
-// let cardsHorizontalMini = new Swiper("#cardHorizontalMini", {
-//     slidesPerView: 5,
-//     spaceBetween: 15,
-//     freeMode: true,
-//     watchSlidesProgress: true,
-//     loop: false,
-//     breakpoints: {
-//         0: {
-//             spaceBetween: 10,
-//             slidesPerView: 'auto',
-//         },
+        icon.addEventListener('click', (e) => {
+            e.stopPropagation();
 
-//         1200: {
-//             slidesPerView: 'auto',
-//         },
+            popovers.forEach(p => p.classList.remove('active'));
 
-//         1400: {
-//             slidesPerView: 5,
-//         },
-//     }
-// });
+            popover.classList.add('active');
+        });
+    });
 
+    document.addEventListener('click', () => {
+        popovers.forEach(p => p.classList.remove('active'));
+    });
 
-// let cardsHorizontal = new Swiper("#cardHorizontalMain", {
-//     effect: 'fade',
-//     fadeEffect: {
-//         crossFade: true
-//     },
-//     loop: false,
-//     thumbs: {
-//         swiper: cardsHorizontalMini,
-//     },
-//     navigation: {
-//         prevEl: ".card__arrow--left",
-//         nextEl: ".card__arrow--right",
-//     },
-// });
-
-// let cardsVerticalMini = new Swiper(".card-vertical__minis", {
-//     grabCursor: true,
-//     freeMode: true,
-//     slidesPerView: 3,
-//     direction: 'vertical',
-//     effect: 'slide',
-//     watchSlidesProgress: true,
-//     loop: false,
-//     spaceBetween: 8,
-//     breakpoints: {
-//         0: {
-//             direction: 'horizontal',
-//             slidesPerView: 2,
-//         },
-
-//         620: {
-//             slidesPerView: 2,
-//             direction: 'horizontal',
-//         },
-
-//         1400: {
-//             slidesPerView: 3,
-//             direction: 'vertical',
-//         },
-//     }
-// });
-
-// let cardsVertical = new Swiper(".card-vertical__main", {
-//     speed: 1000,
-//     slidesPerView: 1,
-//     effect: "fade",
-//     fadeEffect: {
-//         crossFade: true
-//     },
-//     allowTouchMove: false,
-//     thumbs: {
-//         swiper: cardsVerticalMini,
-//     },
-
-// });
-
-
-// let searchWrap = document.querySelector('.header__search');
-// let searchInput = document.querySelector('.header__search input');
-// let searchBtn = document.querySelector('.header__trigger');
-
-
-// if(searchWrap){
-//     searchBtn.addEventListener('click', function (e) {
-//         e.stopPropagation();
-//         searchWrap.classList.add('active');
-//     });
-
-//     searchInput.addEventListener('click', function (e) {
-//         e.stopPropagation();
-//         searchWrap.classList.add('active');
-//     });
-
-
-//     document.addEventListener('click', function () {
-//         searchWrap.classList.remove('active');
-//         searchInput.classList.remove('active');
-//     });
-// }
-
-
+    popovers.forEach(popover => {
+        const drop = popover.querySelector('.ideal__drop');
+        drop.addEventListener('click', e => e.stopPropagation());
+    });
+});
