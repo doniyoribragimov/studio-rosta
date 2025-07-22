@@ -405,6 +405,60 @@ const studentSlider = new Swiper('.student__slider', {
     }
 });
 
+const resultSlider = new Swiper('.result__slider', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 3.5,
+    speed: 600,
+    navigation: {
+        prevEl: ".result .arrow--left",
+        nextEl: ".result .arrow--right",
+    },
+    
+    breakpoints: {
+        0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+        },
+
+        620: {
+            spaceBetween: 20,
+            slidesPerView: 2.5,
+        },
+
+        1400: {
+            slidesPerView: 3.5,
+        },
+    }
+});
+
+const bookingSlider = new Swiper('.booking__slider', {
+    loop: true,
+    spaceBetween: 40,
+    slidesPerView: 2,
+    speed: 600,
+    navigation: {
+        prevEl: ".booking .arrow--left",
+        nextEl: ".booking .arrow--right",
+    },
+  
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+
+        1400: {
+            slidesPerView: 2,
+        },
+    }
+});
+
 const sectionName_5 = new Swiper('.sectionName__slider', {
     loop: true,
     spaceBetween: 30,
