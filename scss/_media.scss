@@ -208,6 +208,22 @@
             }
         }
     }
+
+    .connect{
+        .title{
+            margin-right: 0;
+        }
+
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+
+        &__item{
+            &:first-child{
+                grid-column-start: 1;
+            }
+        }
+    }
 }
 
 @media(max-width: 1024px) {
@@ -437,10 +453,8 @@
             ;
         }
 
-        &__item {
-         
-        }
     }
+
 
     .features {
         &__inner {
@@ -819,6 +833,42 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .booking__banner{
+    
+        .form {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+            textarea {
+                height: 60px;
+                border-radius: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+    
+            .phone-mask {
+                border-radius: 12px;
+            }
+
+        }
+    
+        .iti__flag-container {
+            height: 55px;
+        }
+    }
+
+    .adds{
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+
+    .tarif{
+        margin-top: 20px;
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1122,6 +1172,34 @@
             }
 
           
+        }
+    }
+
+    .connect{
+        .title{
+            margin-right: 0;
+        }
+
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+
+        &__items{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        &__item{
+           padding: 16px;
+           border-radius: 20px;
+           h3{
+               font-size: 32px;
+               margin-bottom: 30px;
+           }
+
+           p{
+            font-size: 15px;
+           }
         }
     }
 }
@@ -2416,6 +2494,82 @@
     .stages{
         .iti__selected-flag{
             height: 45px!important;
+        }
+    }
+
+    .connect{
+        .title{
+            margin-right: 0;
+        }
+
+        &__left{
+            gap: 20px;
+        }
+
+        &__items{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item{
+           padding: 16px;
+           border-radius: 20px;
+           h3{
+               font-size: 32px;
+               margin-bottom: 30px;
+           }
+
+           p{
+            font-size: 15px;
+           }
+        }
+    }
+
+    .booking__banner{
+    
+        .form {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+            textarea {
+                height: 60px;
+                border-radius: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+    
+            .phone-mask {
+                border-radius: 12px;
+            }
+
+        }
+    
+        .iti__flag-container {
+            height: 50px;
+        }
+    }
+
+    
+    .pink-theme{
+        .selects{
+            &__item{
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(5){
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .adds{
+        &__inner{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .title{
+            font-size: 28px;
         }
     }
 }

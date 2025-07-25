@@ -269,6 +269,17 @@
         }
 
     }
+
+    &--pink {
+        background-color:#f863de;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #fc8d25;
+        }
+
+    }
     
 
     &--orange {
