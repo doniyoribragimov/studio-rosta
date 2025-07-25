@@ -215,6 +215,12 @@
         padding: 0 20px;
     }
 
+    .stages{
+        .form{
+            grid-template-columns: 1fr;
+        }
+    }
+
     .opps{
         &__inner{
             grid-template-columns: repeat(2, 1fr);
@@ -2403,6 +2409,13 @@
             p{
                 font-size: 15px;
             }
+        }
+    }
+
+
+    .stages{
+        .iti__selected-flag{
+            height: 45px!important;
         }
     }
 }

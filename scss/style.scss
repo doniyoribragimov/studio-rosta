@@ -2878,6 +2878,34 @@
         color: #000;
         font-size: 17px;
     }
+
+    .booking__banner{
+        margin-top: 40px!important;
+    }
+
+    .iti__selected-flag{
+        height: 50px;
+    }
+
+    .form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) auto;
+        gap: 16px;
+        textarea{
+            height: 60px;
+            border-radius: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .phone-mask{
+            border-radius: 12px;
+        }
+
+        &__policy a{
+            color: rgb(110, 152, 12);
+        }
+    }
 }
 
 .arrows{

@@ -10941,6 +10941,29 @@ select,
   color: #000;
   font-size: 17px;
 }
+.stages .booking__banner {
+  margin-top: 40px !important;
+}
+.stages .iti__selected-flag {
+  height: 50px;
+}
+.stages .form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 16px;
+}
+.stages .form textarea {
+  height: 60px;
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.stages .form .phone-mask {
+  border-radius: 12px;
+}
+.stages .form__policy a {
+  color: rgb(110, 152, 12);
+}
 
 .arrows {
   display: flex;
@@ -11796,6 +11819,9 @@ select,
 @media (max-width: 1024px) {
   .container {
     padding: 0 20px;
+  }
+  .stages .form {
+    grid-template-columns: 1fr;
   }
   .opps__inner {
     grid-template-columns: repeat(2, 1fr);
@@ -13336,6 +13362,9 @@ select,
   }
   .opps__item p {
     font-size: 15px;
+  }
+  .stages .iti__selected-flag {
+    height: 45px !important;
   }
 }
 @media (max-width: 400px) {
