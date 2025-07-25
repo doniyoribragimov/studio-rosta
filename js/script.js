@@ -349,25 +349,25 @@ const openupLeft = new Swiper('#openupLeft', {
     slidesPerView: 'auto',
     spaceBetween: 20,
     allowTouchMove: false,
-    speed: 4000, 
+    speed: 4000,
     autoplay: {
-      delay: 0, 
-      disableOnInteraction: false,
+        delay: 0,
+        disableOnInteraction: false,
     },
-  });
+});
 
-  const openupRight = new Swiper('#openupRight', {
+const openupRight = new Swiper('#openupRight', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     allowTouchMove: false,
     speed: 4000,
     autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-      reverseDirection: true, 
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,
     },
-  });
+});
 
 const studentSlider = new Swiper('.student__slider', {
     loop: true,
@@ -414,7 +414,7 @@ const resultSlider = new Swiper('.result__slider', {
         prevEl: ".result .arrow--left",
         nextEl: ".result .arrow--right",
     },
-    
+
     breakpoints: {
         0: {
             slidesPerView: 1.2,
@@ -441,7 +441,7 @@ const bookingSlider = new Swiper('.booking__slider', {
         prevEl: ".booking .arrow--left",
         nextEl: ".booking .arrow--right",
     },
-  
+
     breakpoints: {
         0: {
             slidesPerView: 1,
