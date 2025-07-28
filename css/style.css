@@ -3407,12 +3407,12 @@ html.with-fancybox body.hide-scrollbar {
   box-shadow: unset !important;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
+.purple-theme .services__link, .mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
+  .purple-theme .services__link:hover, .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
     opacity: 0.8;
   }
 }
@@ -3845,12 +3845,12 @@ select,
   box-shadow: unset !important;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
+.purple-theme .services__link, .mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
+  .purple-theme .services__link:hover, .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
     opacity: 0.8;
   }
 }
@@ -3974,12 +3974,12 @@ input[type=radio]:checked::after {
   box-shadow: unset !important;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
+.purple-theme .services__link, .mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
+  .purple-theme .services__link:hover, .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
     opacity: 0.8;
   }
 }
@@ -7492,12 +7492,12 @@ html.with-fancybox body.hide-scrollbar {
   box-shadow: unset !important;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
+.purple-theme .services__link, .mobile-menu__close, .mobile-menu__logo, .way__item, .worth__link, .resz__link, .selects__inner a, .pricing__link, .suggest a.suggest__item, .socials img, .news-modal__share, .help__inner a, .footer__gis img, .footer__socials img, .header__flag, .header__rating, .logo, .modal__close, .tabs__item.active, .tabs__item {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
+  .purple-theme .services__link:hover, .mobile-menu__close:hover, .mobile-menu__logo:hover, .way__item:hover, .worth__link:hover, .resz__link:hover, .selects__inner a:hover, .pricing__link:hover, .suggest a.suggest__item:hover, .socials img:hover, .news-modal__share:hover, .help__inner a:hover, .footer__gis img:hover, .footer__socials img:hover, .header__flag:hover, .header__rating:hover, .logo:hover, .modal__close:hover, .tabs__item:hover {
     opacity: 0.8;
   }
 }
@@ -8142,6 +8142,14 @@ select,
 .btn--yellow:hover {
   background-color: #fff;
   color: #fabf33;
+}
+.btn--purple {
+  background-color: #8d388c;
+  color: #fff;
+}
+.btn--purple:hover {
+  background-color: #fff;
+  color: #8d388c;
 }
 .btn--orange {
   background-color: #fc8d25;
@@ -11309,6 +11317,9 @@ select,
 .meaning .container:last-child {
   margin-top: 30px;
 }
+.meaning .text {
+  color: #fff;
+}
 
 .getting__inner {
   display: grid;
@@ -11963,6 +11974,14 @@ select,
   font-size: 17px;
 }
 
+.bold {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -12289,6 +12308,122 @@ select,
 }
 .yellow-theme .tarif__main {
   background-color: #fffedc;
+}
+
+.purple-theme .serve__price {
+  background-image: linear-gradient(0.102turn, rgb(208, 118, 199) 0%, rgb(85, 53, 127) 100%);
+}
+.purple-theme .serve__date {
+  color: #724590;
+}
+.purple-theme .meaning__item {
+  background-color: #f3f9ff;
+}
+.purple-theme .title span.dashed {
+  border-width: 2px;
+  border-color: #fabf33;
+}
+.purple-theme.booking .title span {
+  background-color: #c66cdd;
+  color: #323232;
+  display: inline-block;
+}
+.purple-theme.team .title {
+  text-transform: uppercase;
+}
+.purple-theme.team .title span {
+  padding: 4px 12px;
+  background-image: linear-gradient(0.102turn, rgb(208, 118, 199) 0%, rgb(85, 53, 127) 100%);
+  border: 2px dashed #fff;
+  color: #fff;
+  border-radius: 50px;
+}
+.purple-theme.team .text.mb {
+  margin-top: 20px;
+  color: #000;
+}
+.purple-theme .tabs__item.active {
+  background-color: #c66cdd;
+}
+.purple-theme .stages__select {
+  background-color: #c66cdd;
+}
+.purple-theme.get .title span {
+  background-image: linear-gradient(0.139turn, rgb(255, 206, 89) 0%, rgb(255, 254, 220) 100%);
+  color: #323232;
+  display: inline-block;
+  border-color: #323232;
+}
+.purple-theme .get__item {
+  background-color: rgb(253, 248, 223);
+}
+.purple-theme .stages__inner {
+  background-image: linear-gradient(0.609turn, rgb(232, 166, 247) 0%, rgb(248, 241, 253) 100%);
+  color: #000;
+  padding: 16px 10px;
+}
+.purple-theme .stages__inner h3 {
+  text-transform: uppercase;
+}
+.purple-theme .booking__banner {
+  margin-top: 50px;
+  background-image: linear-gradient(0.632turn, rgb(149, 89, 143) 0%, rgb(248, 193, 243) 100%);
+}
+.purple-theme .booking__banner .form__policy a {
+  color: rgb(121, 23, 186);
+}
+.purple-theme .services .title span {
+  color: #c66cdd;
+}
+.purple-theme .services__item:nth-child(1) {
+  background-image: linear-gradient(0.444turn, rgb(243, 180, 224) 0%, rgb(252, 219, 219) 100%);
+}
+.purple-theme .services__item:nth-child(2) {
+  background-image: linear-gradient(0turn, rgb(237, 213, 255) 0%, rgb(213, 213, 255) 100%);
+}
+.purple-theme .services__item:nth-child(3) {
+  background-image: linear-gradient(0turn, rgb(255, 226, 213) 0%, rgb(255, 251, 213) 100%);
+  overflow: visible;
+}
+.purple-theme .services__item:nth-child(3) img {
+  z-index: 1;
+  right: -40px;
+  bottom: 0;
+  width: 40%;
+}
+.purple-theme .services__item:nth-child(4) {
+  background-image: linear-gradient(0turn, rgb(255, 210, 210) 0%, rgb(255, 233, 210) 100%);
+}
+.purple-theme .services__item:nth-child(5) {
+  background-image: linear-gradient(0turn, rgb(214, 213, 255) 0%, rgb(213, 255, 252) 100%);
+}
+.purple-theme .services__item:nth-child(5) img {
+  rotate: 0deg;
+  bottom: 0;
+}
+.purple-theme .services__link {
+  background: #8d378c;
+  color: #fff;
+}
+.purple-theme .title span.circle {
+  background-color: #c66cdd;
+  color: #fff;
+  padding: 4px 7px;
+}
+.purple-theme .accordion__item.active .accordion__btn {
+  background-color: #c66cdd;
+}
+.purple-theme .title span {
+  color: rgb(239, 90, 216);
+}
+.purple-theme .tarif__box {
+  background-image: linear-gradient(0.407turn, rgba(246, 104, 193, 0.68) 0%, rgba(197, 154, 237, 0.68) 100%);
+}
+.purple-theme.tarif .title span.circle {
+  background-color: #55357f;
+}
+.purple-theme .tarif__main {
+  background-color: #ffd4e9;
 }
 
 .cyan-theme .serve__price {
@@ -14346,6 +14481,27 @@ select,
     padding: 16px;
     min-height: 100px;
   }
+  .purple-theme .services__item:nth-child(3) {
+    padding-right: 100px;
+  }
+  .purple-theme .services__item:nth-child(3) img {
+    z-index: 1;
+    right: 0px;
+    bottom: 0;
+    width: 100px;
+  }
+  .purple-theme .services__item:nth-child(5) {
+    padding-right: 100px;
+  }
+  .purple-theme .services__item:nth-child(5) img {
+    rotate: 0deg;
+    bottom: 0;
+    width: 100px;
+  }
+  .purple-theme .services__link {
+    background: #8d378c;
+    color: #fff;
+  }
 }
 @media (max-width: 400px) {
   .container {
@@ -14426,5 +14582,8 @@ select,
   }
   .footer__boxes {
     grid-column-start: span 1;
+  }
+  .title {
+    font-size: 28px;
   }
 }

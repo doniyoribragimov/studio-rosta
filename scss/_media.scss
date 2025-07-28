@@ -2808,6 +2808,39 @@
             min-height: 100px;
         }
     }
+
+    .purple-theme{
+        .services{
+    
+            &__item{
+                &:nth-child(3){
+                    padding-right: 100px;
+                    img{
+                        z-index: 1;
+                        right: 0px;
+                        bottom: 0;
+                        width: 100px;
+                    }
+                }
+    
+    
+                &:nth-child(5){
+                    padding-right: 100px;
+                    img{
+                        rotate: 0deg;
+                        bottom: 0;
+                        width: 100px;
+                    }
+                }
+            }
+    
+            &__link{
+                background: #8d378c;
+                color: #fff;
+                @extend %hover;
+            }
+        }
+    }
 }
 
 @media(max-width: 400px) {
@@ -2932,6 +2965,10 @@
             grid-column-start: span 1;
         }
 
+    }
+
+    .title{
+        font-size: 28px;
     }
 
 }

@@ -3331,6 +3331,10 @@
     .container:last-child {
         margin-top: 30px;
     }
+
+    .text{
+        color: #fff;
+    }
 }
 
 .getting {
@@ -4172,6 +4176,14 @@
     }
 }
 
+.bold{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -4639,6 +4651,175 @@
 
     .tarif__main{
         background-color: #fffedc;
+    }
+   
+}
+
+.purple-theme {
+    .serve {
+        &__price {
+            background-image: linear-gradient(0.102turn, rgba(208, 118, 199, 1) 0%, rgba(85, 53, 127, 1) 100%);
+        }
+
+        &__date{
+            color: #724590;
+        }
+    }
+
+
+
+    .meaning__item{
+        background-color: #f3f9ff;
+    }
+
+    .title span.dashed {
+        border-width: 2px;
+        border-color: #fabf33;
+    }
+
+
+
+    &.booking {
+        .title {
+            span {
+                background-color: #c66cdd;
+                color: #323232;
+                display: inline-block;
+            }
+        }
+    }
+
+    &.team {
+        .title {
+            text-transform: uppercase;
+
+            span {
+                padding: 4px 12px;
+                background-image: linear-gradient(0.102turn, rgba(208, 118, 199, 1) 0%, rgba(85, 53, 127, 1) 100%);
+                border: 2px dashed #fff;
+                color: #fff;
+                border-radius: 50px;
+            }
+        }
+
+        .text.mb {
+            margin-top: 20px;
+            color: #000;
+        }
+    }
+
+    .tabs__item.active {
+        background-color: #c66cdd;
+    }
+
+    .stages__select {
+        background-color: #c66cdd;
+    }
+
+    &.get .title span {
+        background-image: linear-gradient(0.139turn, rgba(255, 206, 89, 1) 0%, rgba(255, 254, 220, 1) 100%);
+        color: #323232;
+        display: inline-block;
+        border-color: #323232;
+    }
+
+    .get__item {
+        background-color: rgb(253, 248, 223);
+    }
+
+    .stages__inner {
+        background-image: linear-gradient(0.609turn, rgba(232, 166, 247, 1) 0%, rgba(248, 241, 253, 1) 100%);
+        color: #000;
+        padding: 16px 10px;
+
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    .booking__banner {
+        margin-top: 50px;
+        background-image: linear-gradient(0.632turn, rgba(149, 89, 143, 1) 0%, rgba(248, 193, 243, 1) 100%);
+
+        .form__policy a {
+            color: rgb(121, 23, 186);
+        }
+    }
+
+    .services{
+        .title span{
+            color: #c66cdd;
+        }
+
+        &__item{
+            &:nth-child(1){
+                background-image: linear-gradient(0.444turn, rgba(243, 180, 224, 1) 0%, rgba(252, 219, 219, 1) 100%);
+            }
+
+            &:nth-child(2){
+                background-image: linear-gradient(0turn, rgba(237, 213, 255, 1) 0%, rgba(213, 213, 255, 1) 100%);
+            }
+
+            &:nth-child(3){
+                background-image: linear-gradient(0turn, rgba(255, 226, 213, 1) 0%, rgba(255, 251, 213, 1) 100%);
+                overflow: visible;
+                img{
+                    z-index: 1;
+                    right: -40px;
+                    bottom: 0;
+                    width: 40%;
+                }
+            }
+
+            &:nth-child(4){
+                background-image: linear-gradient(0turn, rgba(255, 210, 210, 1) 0%, rgba(255, 233, 210, 1) 100%);
+            }
+
+            &:nth-child(5){
+                background-image: linear-gradient(0turn, rgba(214, 213, 255, 1) 0%, rgba(213, 255, 252, 1) 100%);
+                img{
+                    rotate: 0deg;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &__link{
+            background: #8d378c;
+            color: #fff;
+            @extend %hover;
+        }
+    }
+
+    .title span.circle {
+        background-color: #c66cdd;
+        color: #fff;
+        padding: 4px 7px;
+    }
+
+
+    .accordion__item.active .accordion__btn {
+        background-color: #c66cdd;
+    }
+
+
+
+    .title span {
+        color: rgb(239, 90, 216);
+    }
+
+    .tarif__box{
+        background-image: linear-gradient(0.407turn, rgba(246, 104, 193, 0.68) 0%, rgba(197, 154, 237, 0.68) 100%);
+    }
+
+    &.tarif{
+        .title span.circle{
+            background-color: #55357f;
+        }
+    }
+
+    .tarif__main{
+        background-color: #ffd4e9;
     }
    
 }

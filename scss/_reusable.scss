@@ -302,8 +302,19 @@
         }
 
     }
-    
 
+    &--purple {
+        background-color:#8d388c;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #8d388c;
+        }
+
+    }
+    
+    
     &--orange {
         background-color:#fc8d25;
         color: #fff;
