@@ -270,13 +270,35 @@
 
     }
 
+    &--cyan {
+        background-color:rgb(30, 153, 162);;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: rgb(30, 153, 162);;
+        }
+
+    }
+
     &--pink {
         background-color:#f863de;
         color: #fff;
 
         &:hover {
             background-color: #fff;
-            color: #fc8d25;
+            color: #f863de;
+        }
+
+    }
+
+    &--yellow {
+        background-color:#fabf33;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #fabf33;
         }
 
     }

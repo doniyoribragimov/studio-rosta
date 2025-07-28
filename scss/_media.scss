@@ -224,11 +224,23 @@
             }
         }
     }
+
+    .serve__nums{
+        top: 0;
+    }
 }
 
 @media(max-width: 1024px) {
     .container {
         padding: 0 20px;
+    }
+
+    .way{
+        &__inner{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
     }
 
     .stages{
@@ -869,6 +881,77 @@
         margin-top: 20px;
         font-size: 15px;
     }
+
+    .mission{
+        &__slider{
+            margin: 0 50px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+    }
+
+    .resz{
+        &__inner{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            'rez1 rez1 rez2 rez2'
+            'rez3 rez3 rez2 rez2'
+            'rez4 rez5 rez5 rez5'
+            'rez4 rez5 rez5 rez5'
+            'rez6 rez6 rez6 rez6'
+            'rlink rlink rlink rlink'
+            ;
+        }
+    }
+
+    .worth{
+        &__inner{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-areas: unset;
+        }
+
+        &__item{
+            grid-area: unset!important;
+        }
+
+        .worth__item{
+            padding-bottom: 16px;
+            margin-right: 0;
+            padding-right: 16px;
+            &:has(img){
+                padding-bottom: 100px;
+                margin-bottom: 0;
+                img{
+                    bottom: 0;
+                }
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        &__link{
+            grid-area: unset;
+        }
+    }
+
+    .meaning{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .selects{
+        overflow: hidden;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1200,6 +1283,74 @@
            p{
             font-size: 15px;
            }
+        }
+    }
+
+    .resz{
+        &__inner{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: unset;
+        }
+
+        &__item{
+            grid-area: unset!important;
+            h3{
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+            &:nth-child(2){
+                padding: 16px;
+                padding-bottom: 40px;
+                img{
+                    bottom: -20px;
+                    width: 120px;
+                }
+            }
+            &:nth-child(4){
+                margin-right: 0;
+                padding-right: 110px;
+                img{
+                    right: 0;
+                    width: 100px;
+                }
+            }
+            &:nth-child(6){
+                padding-right: 0px;
+                padding-bottom: 130px;
+                img{
+                    width: auto;
+                    height: 130px;
+                    right: -16px;
+                }
+            }
+        }
+
+        &__link{
+            grid-area: unset;
+            height: 50px;
+        }
+    }
+
+    .worth{
+        &__item{
+            grid-area: unset!important;
+            h3{
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        &__link{
+            height: 50px;
         }
     }
 }
@@ -2570,6 +2721,91 @@
 
         .title{
             font-size: 28px;
+        }
+    }
+
+    .serve{
+        &__date{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .mission{
+        &__slider{
+            margin: 0 30px;
+        }
+
+        &__text{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        &__item{
+            padding: 16px;
+            border-radius: 16px;
+            h3{
+                font-size: 16px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .serve{
+        &__mobile{
+            padding-bottom: 50px;
+        }
+
+        &__nums{
+            top: 50px;
+        }
+    }
+
+    .meaning{
+        &__image{
+            height: 200px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        &__infos{
+            text-align: center;
+            p{
+                font-size: 14px;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .tarif__box strong{
+        font-size: 32px;
+    }
+
+    .way{
+        overflow: hidden;
+        
+        &__inner{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-bottom: 6px;
+            gap: 10px;
+            margin-right: -30px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__item{
+            flex-shrink: 0;
+            width: 280px;
+            padding: 16px;
+            min-height: 100px;
         }
     }
 }

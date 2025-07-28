@@ -432,6 +432,32 @@ const resultSlider = new Swiper('.result__slider', {
     }
 });
 
+const missonSlider = new Swiper('.mission__slider', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 2,
+    speed: 600,
+    navigation: {
+        prevEl: ".mission .arrow--left",
+        nextEl: ".mission .arrow--right",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+
+        620: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+        },
+
+        1024: {
+            slidesPerView: 2,
+        },
+    }
+});
+
 const bookingSlider = new Swiper('.booking__slider', {
     loop: true,
     spaceBetween: 40,
