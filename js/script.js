@@ -26,51 +26,6 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // СЛАЙДЕР ДЛЯ БЕСКОНЕЧНОГО СКРОЛЛИНГА
-    // $('.slider_infinite').slick({
-    //     speed: 2000,
-    //     autoplay: true,
-    //     autoplaySpeed: 0,
-    //     centerMode: false,
-    //     cssEase: 'linear',
-    //     slidesToShow: 1,
-    //     draggable: false,
-    //     focusOnSelect: false,
-    //     pauseOnFocus: false,
-    //     pauseOnHover: false,
-    //     slidesToScroll: 1,
-    //     variableWidth: true,
-    //     infinite: true,
-    //     initialSlide: 1,
-    //     arrows: false,
-    //     buttons: false,
-    // });
-
-    // let sliderOn = window.matchMedia("(max-width: 1200px)");
-    // checkMedia(sliderOn);
-    // sliderOn.addListener(checkMedia);
-
-    // function checkMedia(sliderOn) {
-    //     if (sliderOn.matches) {
-    //         $('.program__items').slick({
-    //             slidesToShow: 2,
-    //             infinite: true,
-    //             arrows: false,
-    //             buttons: false,
-    //             responsive: [
-    //                 {
-    //                     breakpoint: 768,
-    //                     settings: {
-    //                         slidesToShow: 1
-    //                     }
-    //                 }
-    //             ]
-
-    //         });
-    //     }
-    // }
-
-    // checkMedia(sliderOn);
 
 
     // ДЛЯ DISABLED КНОПКИ, ЕСЛИ ЧЕКБОКС В ФОРМЕ НЕ CHECKED
@@ -133,18 +88,6 @@ jQuery(document).ready(function ($) {
         closeModalOrMenu($(this).parents('.mobile-menu'));
     });
 
-    // ФУНКЦИЯ ДЛЯ ТАБОВ, ЧТОБЫ ПОКАЗАТЬ ВСЕ ТАБЫ
-    let tabsCheck = window.matchMedia("(max-width: 620px)");
-    checkMedia(tabsCheck);
-    tabsCheck.addListener(checkMedia);
-
-    function checkMedia(tabsCheck) {
-        if (tabsCheck.matches) {
-        } else {
-        }
-    }
-
-    checkMedia(tabsCheck);
 
     // toggler ДЛЯ АККОРДИОНА
     $('.accordion__item').on('click', function (e) {
@@ -152,79 +95,34 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('active')
     })
 
-    let filterCheck = window.matchMedia("(max-width: 620px)");
-    checkMedia(filterCheck);
-    filterCheck.addListener(checkMedia);
-    function checkMedia(filterCheck) {
-        if (filterCheck.matches) {
-            toggleTabs(".sectionName", 3);
-        } else {
-            toggleTabs(".sectionName", 8);
-        }
-    }
 
-    function toggleTabs(container, threshold) {
-        const items = $(`${container} .tabs__item`);
-        const moreButton = $(`${container} .tabs__more`);
-        if (items.length <= threshold + 1) {
-            moreButton.hide();
-        } else {
-            items.hide().filter(`:lt(${threshold + 1})`).show();
-            moreButton.show();
-        }
+    $('.sign__slider').each(function (index, element) {
+        const signSlider = new Swiper(element, {
+            navigation: {
+                prevEl: $(element).parents('.sign__middle .holder').find('.arrow--left').get(0),
+                nextEl: $(element).parents('.sign__middle .holder').find('.arrow--right').get(0),
+            },
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 2,
+            speed: 600,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
 
-        moreButton.off("click").on("click", function () {
-            items.show();
-            moreButton.hide();
+                620: {
+                    spaceBetween: 20,
+                    slidesPerView: 2,
+                },
+
+                1400: {
+                    slidesPerView: 2,
+                },
+            }
         });
-    }
-
-    checkMedia(filterCheck);
-
-    // $('.sectionName__slider').each(function (index, element) {
-    //     const sectionNameSlider = new Swiper(element, {
-    //         loop: true,
-    //         spaceBetween: 30,
-    //         slidesPerView: 4.5,
-    //         centeredSlides: true,
-    //         speed: 600,
-    //         pagination: {
-    //             el: $(element).parents('.sectionName__holder').find('.swiper-pagination').get(0),
-    //             clickable: true,
-    //         },
-    //         navigation: {
-    //             prevEl: $(element).parents('.sectionName__holder').find('.arrow--left').get(0),
-    //             nextEl: $(element).parents('.sectionName__holder').find('.arrow--right').get(0),
-    //         },
-    //         breakpoints: {
-    //             0: {
-    //                 slidesPerView: 1,
-    //                 spaceBetween: 10,
-    //                 // autoHeight: true,
-    //             },
-
-    //             620: {
-    //                 spaceBetween: 20,
-    //                 slidesPerView: 2,
-    //             },
-
-    //             1024: {
-    //                 spaceBetween: 20,
-    //                 slidesPerView: 3,
-    //             },
-
-    //             1400: {
-    //                 spaceBetween: 20,
-    //                 slidesPerView: 4,
-    //             },
-
-    //             1600: {
-    //                 slidesPerView: 4.5,
-    //                 centeredSlides: true,
-    //             },
-    //         }
-    //     });
-    // });
+    });
 
     $('[data-animate]').each(function () {
         var $this = $(this);
@@ -454,6 +352,38 @@ const missonSlider = new Swiper('.mission__slider', {
 
         1024: {
             slidesPerView: 2,
+        },
+    }
+});
+
+const reviewSlider = new Swiper('.review__slider', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 4,
+    speed: 600,
+    navigation: {
+        prevEl: ".review .arrow--left",
+        nextEl: ".review .arrow--right",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // autoHeight: true,
+        },
+
+        620: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+
+        1200: {
+            spaceBetween: 20,
+            slidesPerView: 3,
+        },
+
+        1400: {
+            slidesPerView: 4,
         },
     }
 });

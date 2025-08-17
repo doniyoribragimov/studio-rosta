@@ -2512,13 +2512,14 @@
         display: grid;
         grid-template-columns: 1fr 0.8fr;
         gap: 20px;
+        padding-bottom: 80px;
     }
 
     &__nums {
         position: relative;
         z-index: 1;
         text-align: right;
-        top: 50px;
+        top: 130px;
     }
 
     &__date {
@@ -2543,6 +2544,14 @@
                 height: 50px;
                 width: auto;
                 object-fit: contain;
+            }
+
+            
+            span{
+                padding-right: 50px;
+                background-repeat: no-repeat;
+                background-size: 50px;
+                background-position: right center;
             }
         }
 
@@ -3325,6 +3334,14 @@
             font-size: 18px;
         }
     }
+
+    &__items:not(:has(.connect__item:nth-child(5))){
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 100px;
+        .connect__item:first-child{
+            grid-column-start: 1;
+        }
+    }
 }
 
 .meaning {
@@ -3485,125 +3502,6 @@
     }
 }
 
-.pink-theme {
-    .serve {
-        &__price {
-            background-image: linear-gradient(0.672turn, rgba(155, 99, 248, 1) 0%, rgba(238, 110, 215, 1) 100%);
-        }
-
-    }
-
-    .selects {
-        &__link {
-            background-color: #f763dd;
-            background-image: unset;
-
-            &:hover {
-                color: #f763dd;
-                background-color: #fff;
-            }
-        }
-
-        &__item {
-            &:nth-child(1) {
-                background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(241, 144, 210, 1) 100%);
-            }
-
-            &:nth-child(2) {
-                background-image: linear-gradient(0turn, rgba(192, 144, 234, 1) 0%, rgba(250, 183, 192, 1) 100%);
-            }
-
-            &:nth-child(3) {
-                background-image: linear-gradient(0turn, rgba(245, 205, 158, 1) 0%, rgba(215, 135, 204, 1) 100%);
-
-                img {
-                    bottom: 0;
-                    right: 0;
-                }
-            }
-
-            &:nth-child(4) {
-                background-image: linear-gradient(0turn, rgba(242, 210, 255, 1) 0%, rgba(255, 210, 215, 1) 100%);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
-            }
-
-            &:nth-child(5) {
-                background-image: linear-gradient(0.981turn, rgba(246, 126, 195, 1) 0%, rgba(243, 232, 245, 1) 100%);
-                padding-right: 20px;
-
-                img {
-                    display: none;
-                }
-            }
-        }
-    }
-
-
-    &.team {
-        .title {
-            text-transform: uppercase;
-
-            span {
-                padding: 4px 12px;
-                background-image: linear-gradient(0.103turn, rgba(242, 82, 190, 1) 0%, rgba(177, 28, 100, 1) 100%);
-                border: 2px dashed #fff;
-                color: #fff;
-                border-radius: 50px;
-            }
-        }
-
-        .text.mb {
-            margin-top: 20px;
-            color: #000;
-        }
-
-        .arrow {
-            background-image: linear-gradient(0.103turn, rgba(242, 82, 190, 1) 0%, rgba(177, 28, 100, 1) 100%);
-        }
-    }
-
-    .tabs__item.active {
-        background-color: #f763dd;
-    }
-
-    .stages__select {
-        background-color: #f763dd;
-    }
-
-
-    .title span.circle {
-        background-image: linear-gradient(0.162turn, rgba(249, 124, 204, 1) 0%, rgba(251, 199, 199, 1) 100%);
-        color: #353340;
-        padding: 4px 9px;
-    }
-
-
-    .accordion__item.active .accordion__btn {
-        background-color: rgb(248, 99, 221);
-    }
-
-    .title span {
-        color: rgb(248, 99, 221);
-    }
-
-    .tarif {
-        &__box {
-            background-image: linear-gradient(0.587turn, rgba(235, 185, 243, 1) 0%, rgba(251, 185, 161, 1) 100%);
-        }
-
-        &__main {
-            background-color: #fbcee3;
-        }
-    }
-}
 
 
 .tarif__text {
@@ -3651,6 +3549,20 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 60px 30px;
+    }
+
+    &__twos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .title strong{
+        color: rgb(148, 28, 194);
+        font-weight: 600;
+        border: 5px dotted rgb(148, 28, 194);
+        border-radius: 30px;
+        padding: 2px 5px;
     }
 
     &__top {
@@ -4303,6 +4215,281 @@
     }
 }
 
+.pink-theme {
+    .serve {
+        &__price {
+            background-image: linear-gradient(0.672turn, rgba(155, 99, 248, 1) 0%, rgba(238, 110, 215, 1) 100%);
+        }
+
+    }
+
+    .selects {
+        &__link {
+            background-color: #f763dd;
+            background-image: unset;
+
+            &:hover {
+                color: #f763dd;
+                background-color: #fff;
+            }
+        }
+
+        &__item {
+            &:nth-child(1) {
+                background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(241, 144, 210, 1) 100%);
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(0turn, rgba(192, 144, 234, 1) 0%, rgba(250, 183, 192, 1) 100%);
+            }
+
+            &:nth-child(3) {
+                background-image: linear-gradient(0turn, rgba(245, 205, 158, 1) 0%, rgba(215, 135, 204, 1) 100%);
+
+                img {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            &:nth-child(4) {
+                background-image: linear-gradient(0turn, rgba(242, 210, 255, 1) 0%, rgba(255, 210, 215, 1) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            &:nth-child(5) {
+                background-image: linear-gradient(0.981turn, rgba(246, 126, 195, 1) 0%, rgba(243, 232, 245, 1) 100%);
+                padding-right: 20px;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    &.team {
+        .title {
+            text-transform: uppercase;
+
+            span {
+                padding: 4px 12px;
+                background-image: linear-gradient(0.103turn, rgba(242, 82, 190, 1) 0%, rgba(177, 28, 100, 1) 100%);
+                border: 2px dashed #fff;
+                color: #fff;
+                border-radius: 50px;
+            }
+        }
+
+        .text.mb {
+            margin-top: 20px;
+            color: #000;
+        }
+
+        .arrow {
+            background-image: linear-gradient(0.103turn, rgba(242, 82, 190, 1) 0%, rgba(177, 28, 100, 1) 100%);
+        }
+    }
+
+    .tabs__item.active {
+        background-color: #f763dd;
+    }
+
+    .stages__select {
+        background-color: #f763dd;
+    }
+
+
+    .title span.circle {
+        background-image: linear-gradient(0.162turn, rgba(249, 124, 204, 1) 0%, rgba(251, 199, 199, 1) 100%);
+        color: #353340;
+        padding: 4px 9px;
+    }
+
+
+    .accordion__item.active .accordion__btn {
+        background-color: rgb(248, 99, 221);
+    }
+
+    .title span {
+        color: rgb(248, 99, 221);
+    }
+
+    .tarif {
+        &__box {
+            background-image: linear-gradient(0.587turn, rgba(235, 185, 243, 1) 0%, rgba(251, 185, 161, 1) 100%);
+        }
+
+        &__main {
+            background-color: #fbcee3;
+        }
+    }
+}
+
+.grad-theme {
+    .serve {
+        &__price {
+               background-image: linear-gradient(0.672turn, rgba(248, 99, 222, 1) 0%, rgba(238, 194, 110, 1) 100%);
+        }
+
+    }
+
+    .selects {
+        &__link {
+            background-color: #f763dd;
+            background-image: unset;
+
+            &:hover {
+                color: #f763dd;
+                background-color: #fff;
+            }
+        }
+
+        &__item {
+            &:nth-child(1) {
+                background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(241, 144, 210, 1) 100%);
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(0turn, rgba(192, 144, 234, 1) 0%, rgba(250, 183, 192, 1) 100%);
+            }
+
+            &:nth-child(3) {
+                background-image: linear-gradient(0turn, rgba(245, 205, 158, 1) 0%, rgba(215, 135, 204, 1) 100%);
+
+                img {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            &:nth-child(4) {
+                background-image: linear-gradient(0turn, rgba(242, 210, 255, 1) 0%, rgba(255, 210, 215, 1) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            &:nth-child(5) {
+                background-image: linear-gradient(0.981turn, rgba(246, 126, 195, 1) 0%, rgba(243, 232, 245, 1) 100%);
+                padding-right: 20px;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+
+    .tabs__item{
+        color: #323232;
+        &.active {
+            background-color: #ec91d0
+        }
+    
+    }
+    .stages__select {
+        background-color: #ec91d0
+    }
+
+
+    .title span.circle {
+        background-image: linear-gradient(0.162turn, rgb(249, 124, 204) 0%, rgb(251, 199, 199) 100%);
+        color: #353340;
+        padding: 4px 9px;
+    }
+
+    .services{
+        overflow: hidden;
+        &__item{
+            &:nth-child(1){
+                background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(241, 144, 210, 1) 100%);
+            }
+            &:nth-child(2){
+                background-image: linear-gradient(0turn, rgba(234, 161, 144, 1) 0%, rgba(252, 199, 133, 1) 100%);
+            }
+            &:nth-child(3){
+                background-image: linear-gradient(0turn, rgba(245, 205, 158, 1) 0%, rgba(215, 135, 204, 1) 100%);
+                overflow: visible;
+            }
+            &:nth-child(4){
+                background-image: linear-gradient(0turn, rgba(255, 255, 210, 1) 0%, rgba(255, 233, 210, 1) 100%);
+                overflow: visible;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    scale: 1.4;
+                }
+            }
+            &:nth-child(5){
+                background-image: linear-gradient(0.981turn, rgba(246, 126, 195, 1) 0%, rgba(243, 232, 245, 1) 100%);
+                img{
+                    rotate: 0deg;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &__link{
+            background: #f763dd;
+            color: #fff;
+            @extend %hover;
+        }
+    }
+
+
+    .accordion__item.active .accordion__btn {
+        background-color: #ec91d0
+    }
+
+    .title span {
+        color: rgb(243, 142, 172);
+    }
+
+    .tarif {
+        &__box {
+            background-image: linear-gradient(0.587turn, rgba(235, 185, 243, 1) 0%, rgba(251, 185, 161, 1) 100%);
+        }
+
+        &__main {
+            background-color: #fbcee3;
+        }
+    }
+
+    &.connect span.circle{
+        background-image: linear-gradient(0.672turn, rgba(248, 99, 222, 1) 0%, rgba(238, 194, 110, 1) 100%);
+    }
+
+    .booking__banner{
+        background-image: linear-gradient(0.632turn, rgba(244, 139, 219, 1) 0%, rgba(248, 206, 171, 1) 100%);
+        .form__policy a{
+            color: rgb(121, 23, 186);
+        }
+    }
+
+    .stages__inner{
+        background-image: linear-gradient(0.609turn, rgba(251, 216, 253, 1) 0%, rgba(255, 216, 144, 1) 100%);
+    }
+}
+
 .green-theme {
     .tabs__item.active {
         background-color: #93c225;
@@ -4345,6 +4532,162 @@
             margin-top: 20px;
             color: #000;
         }
+    }
+}
+
+.darkgreen-theme {
+    .tabs__item.active {
+        background-color: #93c225;
+    }
+
+    .stages__select {
+        background-color: #93c225;
+    }
+
+    .stages__inner {
+        background-image: linear-gradient(0.609turn, rgba(190, 222, 138, 1) 0%, rgba(242, 249, 255, 1) 100%);
+        color: #000;
+        padding: 16px 10px;
+    }
+
+    &.worth{
+        .title span{
+            color: #8cbc3e;
+            border-radius: 30px;
+            border: 3px dashed #8cbc3e;
+            padding: 3px 8px;
+        }
+
+    }
+
+    .worth__link{
+        background-color: #97c54c;
+    }
+    
+    .worth__item{
+        &:nth-child(1){
+            padding-right: 16px;
+        }
+
+        &:nth-child(2){
+            padding-right: 16px;
+            padding-bottom: 16px;
+            img{
+                top: -16px;
+                bottom: unset;
+            }
+        }
+
+        &:nth-child(5){
+            padding-right: 150px;
+            img{
+                width: 160px;
+            }
+        }
+    }
+
+    .booking__banner{
+        background-image: linear-gradient(0.633turn, rgba(96, 166, 31, 0.8) 0%, rgba(190, 222, 138, 0.8) 100%);
+    }
+
+    .stages__content {
+        h3 {
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 16px;
+        }
+    }
+
+    .title span.dashed{
+        border-color: #fff;
+        background-color: #97c54c;
+        color: #fff;
+    }
+
+
+    .title span{
+        color: rgb(70, 149, 61);
+    }
+
+    .title span.circle{
+        background-color: #97c54c;
+        color: #fff;
+    }
+
+    .tarif__main{
+        background-color: #ddf4b6;
+
+    }
+
+    .serve__price{
+        background-image: linear-gradient(0.102turn, rgba(168, 218, 86, 1) 0%, rgba(70, 149, 61, 1) 76%);
+    }
+
+    &.meaning .title span{
+        color: rgb(151, 197, 76);
+    }
+
+    .tarif__box{
+        background-image: linear-gradient(0.407turn, rgba(96, 166, 31, 0.68) 0%, rgba(190, 222, 138, 0.68) 100%);
+    }
+
+    .arrow{
+        background-color: #fff;
+        &:hover{
+            path{
+                stroke: #46953d;
+            }
+        }
+    }
+
+    .accordion__item.active .accordion__btn {
+        background-color: #46953d;
+    }
+}
+
+.sign{
+    &__inner{
+        display: grid;
+        grid-template-columns: 1fr 0.4fr;
+        gap: 60px;
+        margin-bottom: 60px;
+    }
+
+    .swiper-slide{
+        height: auto;
+    }
+
+    &__item{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        height: 100%;
+        h3{
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #46953d;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 12px;
+        }
+    }
+
+    &__middle{
+        margin-top: 60px;
+    }
+
+    &__slider{
+        margin-top: 40px;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
@@ -4655,6 +4998,212 @@
    
 }
 
+.serve__view--big{
+    & > img{
+        scale: 1.5;
+    }
+}
+
+.serve__view--top{
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    .serve__nums{
+        top: -80px;
+    }
+}
+
+.leaf-theme {
+    .serve {
+        &__price {
+            background-image: linear-gradient(0.587turn, rgba(228, 220, 150, 1) 0%, rgba(114, 153, 56, 1) 100%);
+        }
+
+    }
+
+
+
+    .meaning__item{
+        background-color: #f3f9ff;
+    }
+
+    .title span.dashed {
+        border-width: 2px;
+        border-color: #fabf33;
+    }
+
+
+
+    &.booking {
+        .title {
+            span {
+                background-color: #c66cdd;
+                color: #323232;
+                display: inline-block;
+            }
+        }
+    }
+
+    &.team {
+        .title {
+            text-transform: uppercase;
+
+            span {
+                padding: 4px 12px;
+                background-image: linear-gradient(0.102turn, rgba(208, 193, 118, 1) 0%, rgba(224, 51, 51, 1) 100%);
+                border: 2px dashed #fff;
+                color: #fff;
+                border-radius: 50px;
+            }
+        }
+
+        .text.mb {
+            margin-top: 20px;
+            color: #000;
+        }
+    }
+
+    .tabs__item{
+        color: #323232;
+        &.active {
+            background-color: #f1b954;
+        }
+    }
+
+    .stages__select {
+        background-color: #f1b954;
+    }
+
+    .arrow{
+        background-color: #ffc100;
+    }
+
+
+    .stages__inner {
+        background-image: linear-gradient(0.609turn, rgba(247, 242, 166, 1) 0%, rgba(255, 230, 212, 1) 100%);
+        color: #000;
+        padding: 16px 10px;
+
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    &.connect .title span.circle{
+        background-image: linear-gradient(0.162turn, rgba(249, 225, 124, 1) 0%, rgba(199, 251, 231, 1) 100%);
+        color: #323232;
+    }
+
+    .services__link{
+        background-color: #ffc803!important;
+    }
+
+    &.services .services__item{
+        &:nth-child(1){
+            padding-right: 16px;
+            p{
+                padding-right: 0;
+            }
+            background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(235, 252, 219, 1) 100%);
+        }
+        &:nth-child(2){
+            background-image: linear-gradient(0turn, rgba(226, 255, 213, 1) 0%, rgba(200, 242, 174, 1) 100%);
+        }
+        &:nth-child(3){
+            background-image: linear-gradient(0turn, rgba(223, 255, 213, 1) 0%, rgba(255, 251, 213, 1) 100%);
+        }
+        &:nth-child(4){
+            background-image: linear-gradient(0turn, rgba(255, 255, 210, 1) 0%, rgba(255, 233, 210, 1) 100%);
+        }
+        &:nth-child(5){
+            background-image: linear-gradient(0.981turn, rgba(203, 214, 147, 1) 0%, rgba(213, 255, 252, 1) 100%);
+        }
+    }
+
+    .booking__banner {
+        margin-top: 50px;
+        background-image: linear-gradient(0.632turn, rgba(226, 198, 0, 1) 0%, rgba(236, 248, 171, 1) 100%);
+
+        .form__policy a {
+            color: rgb(121, 23, 186);
+        }
+    }
+
+
+
+    .title span.circle {
+        background-color: #e1be2c;
+        color: #fff;
+        padding: 4px 7px;
+    }
+
+
+    .accordion__item.active .accordion__btn {
+        background-color: rgb(255, 198, 14);
+    }
+
+
+
+    .title span {
+        color: rgb(255, 198, 14);
+    }
+
+    .tarif__box{
+        background-image: linear-gradient(0.587turn, rgba(247, 226, 152, 1) 0%, rgba(161, 251, 206, 1) 100%);
+    }
+
+    .services__item img{
+        rotate: 0deg;
+    }
+
+    .services{
+        overflow: hidden;
+    }
+
+    .services__link{
+        background: #ffc803;
+    }
+
+    .services__item:nth-child(5){
+        img{
+            bottom: 0;
+        }
+    }
+
+    .services__item:nth-child(3){
+        overflow: visible;
+        img{
+            bottom: 0;
+        }
+    }
+
+    &.tarif{
+        .title span.circle{
+            background-color: #ffc100;
+        }
+    }
+
+    .tarif__main{
+        background-color: #ccf1d8;
+    }
+   
+}
+
+.opps{
+    .text{
+        color: #000;
+        margin-top: 16px;
+    }
+
+    &__four{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-top: 60px;
+    }
+}
+
+
 .purple-theme {
     .serve {
         &__price {
@@ -4822,6 +5371,212 @@
         background-color: #ffd4e9;
     }
    
+}
+@keyframes moveBox {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+
+.serve{
+    &__star{
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+        filter: blur(3.5px);
+        animation: moveBox 10s linear infinite;
+    }
+}
+
+.review{
+    &__item{
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff;
+        & > img{
+            height: 140px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content{
+        padding: 20px;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+            a{
+                @extend %color;
+            }
+        }
+    }
+
+    .arrow{
+        background-color: #6648d1;
+    }
+
+    &__btn{
+        color: #ffffff;
+        background-color: #6648d1;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 6px 12px;
+        margin-top: 16px;
+        @extend %hover;
+    }
+}
+
+.violet-theme {
+    .serve {
+        &__price {
+            background-image: linear-gradient(0.096turn, rgba(70, 37, 182, 1) 0%, rgba(208, 41, 190, 1) 100%);
+        }
+
+        &__date{
+            color: #724590;
+        }
+    }
+
+
+
+    .meaning__item{
+        background-color: #f3f9ff;
+    }
+
+    .title span.dashed {
+        border-width: 2px;
+        border-color: #fabf33;
+    }
+
+
+
+    &.booking {
+        .title {
+            span {
+                background-color: #c66cdd;
+                color: #323232;
+                display: inline-block;
+            }
+        }
+    }
+
+    .tabs__item.active {
+        background-color: #a158c8;
+    }
+
+    .stages__select {
+        background-color: #a158c8;
+    }
+
+
+    .stages__inner {
+        background-image: linear-gradient(0.609turn, rgba(232, 169, 254, 1) 0%, rgba(162, 162, 254, 1) 100%);
+        color: #000;
+        padding: 16px 10px;
+
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    .booking__banner {
+        margin-top: 50px;
+        background-image: linear-gradient(0.632turn, rgba(244, 139, 219, 1) 0%, rgba(199, 143, 214, 1) 100%);
+        .form__policy a {
+            color: rgb(121, 23, 186);
+        }
+    }
+
+    .services{
+        &__item{
+            &:nth-child(1){
+                background-image: linear-gradient(0.444turn, rgba(243, 241, 180, 1) 0%, rgba(241, 144, 210, 1) 100%);
+            }
+
+            &:nth-child(2){
+                background-image: linear-gradient(0turn, rgba(192, 144, 234, 1) 0%, rgba(250, 183, 192, 1) 100%);
+            }
+
+            &:nth-child(3){
+                background-image: linear-gradient(0turn, rgba(245, 205, 158, 1) 0%, rgba(215, 135, 204, 1) 100%);
+                overflow: visible;
+                img{
+                    z-index: 1;
+                    right: -40px;
+                    bottom: 10%;
+                    width: 40%;
+                }
+            }
+
+            &:nth-child(4){
+                background-image: linear-gradient(0turn, rgba(242, 210, 255, 1) 0%, rgba(255, 210, 215, 1) 100%);
+            }
+
+            &:nth-child(5){
+                background-image: linear-gradient(0.981turn, rgba(246, 126, 195, 1) 0%, rgba(243, 232, 245, 1) 100%);
+                img{
+                    rotate: 0deg;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &__link{
+            background: rgb(248, 114, 224);
+            color: #fff;
+            @extend %hover;
+        }
+    }
+
+    .title span.circle {
+        background-color: #c66cdd;
+        color: #fff;
+        padding: 4px 7px;
+    }
+
+
+    .accordion__item.active .accordion__btn {
+        background-color: #c66cdd;
+    }
+
+
+
+    .title span {
+        color: rgb(226, 143, 253);
+    }
+
+    .tarif__box{
+        background-image: linear-gradient(0.407turn, rgba(228, 220, 255, 0.68) 0%, rgba(102, 72, 209, 0.68) 100%);
+        box-shadow: 0px 0px 5px 0px rgba(62, 14, 89, 0.6);
+    }
+
+    &.tarif{
+        .title span.circle{
+            background-color: #b991fd;
+        }
+    }
+
+    .tarif__main{
+        background-color: #dcd2ff;
+    }
+   
+}
+
+.infos{
+    &__content{
+        margin-top: 20px;
+        p{
+            margin-top: 16px;
+        }
+    }
 }
 
 .cyan-theme {

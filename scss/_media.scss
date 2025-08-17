@@ -214,8 +214,15 @@
             margin-right: 0;
         }
 
+
+
         &__inner{
             grid-template-columns: 1fr;
+        }
+
+        &__items:not(:has(.connect__item:nth-child(5))){
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 0;
         }
 
         &__item{
@@ -227,6 +234,20 @@
 
     .serve__nums{
         top: 0;
+    }
+
+    .opps{
+        &__four{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .review{
+        &__item{
+            & > img{
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -2648,9 +2669,19 @@
         }
     }
 
+    .grad-theme{
+        .services__item:nth-child(4){
+            display: none;
+        }
+    }
+
     .connect{
         .title{
             margin-right: 0;
+        }
+
+        &__items:not(:has(.connect__item:nth-child(5))){
+            grid-template-columns: repeat(1, 1fr);
         }
 
         &__left{
@@ -2809,6 +2840,10 @@
         }
     }
 
+    .services{
+        overflow: hidden;
+    }
+
     .purple-theme{
         .services{
     
@@ -2841,6 +2876,85 @@
             }
         }
     }
+
+    .opps{
+        &__four{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+    }
+
+    .serve{
+        &__content{
+            h2 span{
+                background-size: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        &__inner{
+            padding-bottom: 0;
+        }
+    }
+
+    .review{
+        &__slider{
+            margin: 0 50px;
+        }
+
+        &__item{
+            & > img{
+                height: 120px;
+            }
+        }
+    }
+
+    .opps{
+        &__twos{
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+        }
+    }
+
+    .darkgreen-theme{
+        .worth__item{
+            &:nth-child(2){
+                padding-right: 16px;
+                padding-bottom: 16px;
+                img{
+                    top: -36px;
+                    bottom: unset;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+    
+            &:nth-child(5){
+                padding-right: 16px;
+                img{
+                    width: 160px;
+                }
+            }
+        }
+    }
+
+    .sign{
+        &__slider{
+            margin: 0 35px;
+            margin-top: 30px;
+        }
+
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+
+        &__img{
+            height: 200px;
+        }
+    }
+
+    
 }
 
 @media(max-width: 400px) {
